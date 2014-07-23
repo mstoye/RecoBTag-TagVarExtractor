@@ -218,6 +218,105 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.TagVarCSV_flightDistance3dVal     = FatJetInfo.TagVarCSV_flightDistance3dVal[iJet];
       TagVarInfo.TagVarCSV_flightDistance3dSig     = FatJetInfo.TagVarCSV_flightDistance3dSig[iJet];
 
+      //loop over tracks to get IPs
+      std::vector<float> IP2Ds;
+      std::vector<float> IP3Ds;
+      for (int iTrk = FatJetInfo.Jet_nFirstTrkTagVarCSV[iJet]; iTrk < FatJetInfo.Jet_nLastTrkTagVarCSV[iJet]; ++iTrk){
+        IP2Ds.push_back( FatJetInfo.TagVarCSV_trackSip2dSig[iTrk] );
+        IP3Ds.push_back( FatJetInfo.TagVarCSV_trackSip3dSig[iTrk] );
+      }
+
+      //loop over tracks to get trackEtaRel
+      std::vector<float> etaRels; //stores |trackEtaRel|!
+      for (int iTrk = FatJetInfo.Jet_nFirstTrkEtaRelTagVarCSV[iJet]; iTrk < FatJetInfo.Jet_nLastTrkEtaRelTagVarCSV[iJet]; ++iTrk)
+        etaRels.push_back( fabs(FatJetInfo.TagVarCSV_trackEtaRel[iTrk]) );
+
+      //sort the IP vectors in descending order and fill the branches based on the number of tracks
+      std::sort( IP2Ds.begin(),IP2Ds.end(),std::greater<float>() );
+      std::sort( IP3Ds.begin(),IP3Ds.end(),std::greater<float>() );
+      //sort etaRels in ascending order
+      std::sort( etaRels.begin(),etaRels.end() ); //std::sort sorts in ascending order by default
+      int numTracks = FatJetInfo.TagVarCSV_jetNTracks[iJet];
+      int numEtaRelTracks = FatJetInfo.TagVarCSV_jetNTracksEtaRel[iJet];
+      float dummyTrack = -99.;
+      float dummyEtaRel = -1.;
+      //switch on the number of tracks in order to fill branches with a dummy if needed
+      switch(numTracks){
+        // if there are no selected tracks
+        case 0:
+
+          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          break;
+
+        case 1:
+
+          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          break;
+
+        case 2:
+
+          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = IP2Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = IP3Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          break;
+
+        default:
+
+          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = IP2Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = IP2Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = IP3Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = IP3Ds.at(2);
+
+      } //end switch on number of tracks for IP
+
+      //switch on the number of etarel tracks in order to fill branches with a dummy if needed
+      switch(numEtaRelTracks){
+        // if there are no etarel tracks
+        case 0:
+
+          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          break;
+
+        case 1:
+
+          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          break;
+
+        case 2:
+
+          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = etaRels.at(1);
+          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          break;
+
+        default:
+
+          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = etaRels.at(1);
+          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = etaRels.at(2);
+
+      } //end switch on number of etarel tracks
+
+
       TagVarTree->Fill();
     }
     //----------------------------- End fat jet loop ----------------------------------------//
