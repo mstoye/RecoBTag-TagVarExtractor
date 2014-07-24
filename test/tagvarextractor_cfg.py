@@ -19,6 +19,21 @@ options.register('wantSummary', False,
     VarParsing.varType.bool,
     "Print out trigger and timing summary"
 )
+options.register('useExternalInput', False,
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.bool,
+    "Use external input"
+)
+options.register('externalInput', '',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "Path of an external list of input files"
+)
+options.register('dumpPythonCfg', '',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "Name of the rewritten cfg file"
+)
 options.register('jetPtMin', 100.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
@@ -47,7 +62,7 @@ options.parseArguments()
 
 #print options
 
-process = cms.Process("TagVar")
+process = cms.Process("TagVars")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 process.MessageLogger.cout = cms.untracked.PSet(
@@ -74,13 +89,16 @@ inputFiles = [
     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_9_1_EG4.root',
     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_10_1_H5s.root'
 ]
+## If using external input files
+if options.useExternalInput:
+    inputFiles = open(options.externalInput,"r").read().splitlines()
 
 ## Output file
 process.TFileService = cms.Service("TFileService",
     fileName = cms.string(options.outFilename)
 )
 
-process.tagvar = cms.EDAnalyzer('TagVarExtractor',
+process.tagVars = cms.EDAnalyzer('TagVarExtractor',
     MaxEvents    = cms.int32(options.maxEvents),
     ReportEvery  = cms.int32(options.reportEvery),
     InputTTree   = cms.string('btagana/ttree'),
@@ -91,4 +109,8 @@ process.tagvar = cms.EDAnalyzer('TagVarExtractor',
     JetAbsEtaMax = cms.double(options.jetAbsEtaMax)
 )
 
-process.p = cms.Path(process.tagvar)
+process.p = cms.Path(process.tagVars)
+
+## Rewrite the cfg file
+if options.dumpPythonCfg != '':
+    open(options.dumpPythonCfg,'w').write(process.dumpPython())
