@@ -77,18 +77,20 @@ process.source = cms.Source("EmptySource")
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(options.wantSummary) )
 
 ## Input files
-inputFiles = [
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1_1_I7w.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_2_1_esB.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_3_1_zUJ.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_4_1_7KC.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_5_1_xMY.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_6_1_klp.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_7_1_qzV.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_8_1_IcJ.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_9_1_EG4.root',
-    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_10_1_H5s.root'
-]
+from QCDFiles_cff import inputFiles
+
+# inputFiles = [
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1_1_I7w.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_2_1_esB.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_3_1_zUJ.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_4_1_7KC.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_5_1_xMY.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_6_1_klp.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_7_1_qzV.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_8_1_IcJ.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_9_1_EG4.root',
+#     '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_10_1_H5s.root'
+# ]
 ## If using external input files
 if options.useExternalInput:
     inputFiles = open(options.externalInput,"r").read().splitlines()
