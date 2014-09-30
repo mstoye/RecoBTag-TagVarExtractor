@@ -207,16 +207,16 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.TagVarCSV_trackSip2dSigAboveCharm = FatJetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet];
       TagVarInfo.TagVarCSV_trackSip3dValAboveCharm = FatJetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet];
       TagVarInfo.TagVarCSV_trackSip3dSigAboveCharm = FatJetInfo.TagVarCSV_trackSip3dSigAboveCharm[iJet];
-      TagVarInfo.TagVarCSV_vertexCategory          = FatJetInfo.TagVarCSV_vertexCategory[iJet];
+      TagVarInfo.TagVarCSV_vertexCategory          = (FatJetInfo.TagVarCSV_vertexCategory[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexCategory[iJet]);
       TagVarInfo.TagVarCSV_jetNSecondaryVertices   = FatJetInfo.TagVarCSV_jetNSecondaryVertices[iJet];
-      TagVarInfo.TagVarCSV_vertexMass              = FatJetInfo.TagVarCSV_vertexMass[iJet];
+      TagVarInfo.TagVarCSV_vertexMass              = (FatJetInfo.TagVarCSV_vertexMass[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexMass[iJet]);
       TagVarInfo.TagVarCSV_vertexNTracks           = FatJetInfo.TagVarCSV_vertexNTracks[iJet];
-      TagVarInfo.TagVarCSV_vertexEnergyRatio       = FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet];
-      TagVarInfo.TagVarCSV_vertexJetDeltaR         = FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet];
-      TagVarInfo.TagVarCSV_flightDistance2dVal     = FatJetInfo.TagVarCSV_flightDistance2dVal[iJet];
-      TagVarInfo.TagVarCSV_flightDistance2dSig     = FatJetInfo.TagVarCSV_flightDistance2dSig[iJet];
-      TagVarInfo.TagVarCSV_flightDistance3dVal     = FatJetInfo.TagVarCSV_flightDistance3dVal[iJet];
-      TagVarInfo.TagVarCSV_flightDistance3dSig     = FatJetInfo.TagVarCSV_flightDistance3dSig[iJet];
+      TagVarInfo.TagVarCSV_vertexEnergyRatio       = (FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet]);
+      TagVarInfo.TagVarCSV_vertexJetDeltaR         = (FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance2dVal     = (FatJetInfo.TagVarCSV_flightDistance2dVal[iJet] = -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance2dVal[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance2dSig     = (FatJetInfo.TagVarCSV_flightDistance2dSig[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance2dSig[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance3dVal     = (FatJetInfo.TagVarCSV_flightDistance3dVal[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dVal[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance3dSig     = (FatJetInfo.TagVarCSV_flightDistance3dSig[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dSig[iJet]);
 
       //loop over tracks to get IPs
       std::vector<float> IP2Ds;
