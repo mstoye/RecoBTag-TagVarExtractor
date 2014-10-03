@@ -1,1001 +1,1003 @@
-inputFiles = ['/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1000_1_4DA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1001_1_and.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_100_1_Fak.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_101_1_CL0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_102_1_Ki6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_103_1_KdS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_104_1_eZV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_105_1_8Sr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_106_1_zjs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_107_1_7LO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_108_1_8AW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_109_1_0b6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_10_1_H5s.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_110_1_oKj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_111_1_iTu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_112_1_RUI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_113_1_gsX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_114_1_8ME.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_115_1_0Oq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_116_1_rnZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_117_2_Qsx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_118_2_m5Y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_119_2_ogX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_11_1_mzd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_120_1_mbw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_121_1_yUA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_122_1_J9Y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_123_1_0sO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_124_1_6rb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_125_1_VmT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_126_1_0fa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_127_1_tKo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_128_1_Pom.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_129_1_XI2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_12_1_GnI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_130_1_jOs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_131_1_Ln8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_132_1_pq0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_133_1_7VK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_134_1_SIC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_135_1_k2H.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_136_1_aOO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_137_1_yT0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_138_1_1GF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_139_1_gYG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_13_1_sPx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_140_1_IC7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_141_1_CHi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_142_1_mq6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_143_1_epD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_144_1_ZpU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_145_1_FKY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_146_1_7ZX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_147_1_3ML.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_148_1_WqX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_149_1_Oki.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_14_1_H60.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_150_1_W78.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_151_1_hOO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_152_1_wyd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_153_1_AVr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_154_1_DbA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_155_1_xRg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_156_1_RA3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_157_1_nKB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_158_1_yy4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_159_1_FEW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_15_1_CR2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_160_1_6hp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_161_1_Co2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_162_1_Mly.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_163_1_4Kw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_164_1_ZVC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_165_1_yM6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_166_1_gxv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_167_1_p4o.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_168_1_bG6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_169_1_qb8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_16_1_i5v.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_170_1_TuE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_171_1_dg8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_172_1_6lt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_173_1_lcF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_174_1_qfe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_175_1_LzF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_176_1_iGl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_177_1_agh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_178_1_2bm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_179_1_OKX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_17_1_fcK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_180_1_bu6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_181_1_gUy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_182_1_TXp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_183_1_qnu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_184_1_vOP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_185_1_Rwp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_186_1_1nt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_187_1_YuJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_188_1_fjD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_189_1_3gc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_18_1_ZAI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_190_1_0fu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_191_1_918.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_192_1_kcm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_193_1_gxH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_194_1_lmy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_195_1_Cgh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_196_1_4Gi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_197_2_RWK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_198_2_Cbf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_199_2_UkP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_19_1_w5y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1_1_I7w.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_200_1_i2I.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_201_1_SHT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_202_1_7OH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_203_1_Q9s.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_204_1_pxz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_205_1_q0Z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_206_1_sbk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_207_1_wmi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_208_1_ncR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_209_1_NOL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_20_1_Rhu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_210_1_PQ6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_211_1_1ql.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_212_1_SHV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_213_1_Yu9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_214_1_Ivh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_215_1_VNu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_216_1_x37.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_217_1_OtS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_218_1_oyf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_219_1_CNd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_21_1_Sl6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_220_1_603.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_221_1_ZlT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_222_1_aYN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_223_1_5vu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_224_1_NnG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_225_1_wZ2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_226_1_eQX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_227_1_26j.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_228_1_766.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_229_1_AgW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_22_1_Gct.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_230_1_8tP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_231_1_Rm3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_232_1_kci.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_233_1_IZt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_234_1_ox7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_235_1_8z8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_236_1_3Yz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_237_1_9B0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_238_1_dMI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_239_1_4X8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_23_1_8RZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_240_1_atc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_241_1_FCU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_242_1_1rD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_243_1_4Fb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_244_1_xbe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_245_1_0EG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_246_1_4A8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_247_1_UzK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_248_1_jRY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_249_1_vHu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_24_1_hwl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_250_1_h8Q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_251_1_gP3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_252_1_Fxq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_253_1_em4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_254_1_bLk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_255_1_h9A.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_256_1_3Vu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_257_1_8lu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_258_1_8WQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_259_1_mYf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_25_1_9EJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_260_1_Lav.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_261_1_giA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_262_1_c85.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_263_1_qd8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_264_1_B1h.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_265_1_GuJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_266_1_ySL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_267_1_wmR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_268_1_GiW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_269_1_8Gx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_26_1_diw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_270_1_B9Q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_271_1_nxV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_272_1_w8u.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_273_1_HCp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_274_1_KA6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_275_1_53Y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_276_1_8gN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_277_1_ILe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_278_1_EZ3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_279_1_SKF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_27_1_Ryp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_280_1_yf9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_281_1_yR0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_282_1_vRv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_283_1_IyI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_284_1_e1V.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_285_1_Chb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_286_1_jUd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_287_1_OXz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_288_1_XUH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_289_1_xg7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_28_1_rOn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_290_1_VCL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_291_1_xoO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_292_1_AOY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_293_1_Umd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_294_1_3lG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_295_1_aJM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_296_1_epl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_297_1_f7n.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_298_1_Rps.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_299_1_Fp5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_29_1_cTG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_2_1_esB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_300_1_WqV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_301_1_52G.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_302_1_haA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_303_1_qOl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_304_1_iKN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_305_1_Mbx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_306_1_11I.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_307_1_EzL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_308_1_5TX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_309_1_jeR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_30_1_X8q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_310_1_HTn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_311_1_cAQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_312_1_pVa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_313_1_Tj4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_314_1_wQG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_315_1_gIt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_316_1_tAE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_317_1_nkf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_318_1_Hrp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_319_1_LRO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_31_1_HZm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_320_1_iLP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_321_1_laP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_322_1_hDK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_323_1_jvG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_324_1_Y0o.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_325_1_4nG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_326_1_9ME.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_327_1_zlq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_328_1_a42.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_329_1_WcW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_32_1_aPP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_330_1_tfE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_331_1_hYN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_332_1_j9q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_333_1_htq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_334_1_7eA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_335_1_zWT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_336_1_svq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_337_1_JNZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_338_1_jTw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_339_1_FoZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_33_1_65V.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_340_1_JLW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_341_1_AL9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_342_1_bQ2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_343_1_AMI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_344_1_tn8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_345_1_XPY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_346_1_ygq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_347_1_LAp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_348_1_hvX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_349_1_jGa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_34_1_SvX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_350_1_R35.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_351_1_kYb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_352_1_H0i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_353_1_cYl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_354_1_1km.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_355_1_Spx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_356_1_RWe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_357_1_Qc2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_358_1_slB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_359_1_yPl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_35_1_4PF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_360_1_KDf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_361_1_PkI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_362_1_WWr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_363_1_3fj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_364_1_ThW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_365_1_xa9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_366_1_prX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_367_1_BiV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_368_1_25W.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_369_1_ZKm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_36_1_R7D.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_370_1_H5o.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_371_1_Ppr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_372_1_iPQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_373_1_tbE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_374_1_6Xo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_375_1_ECY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_376_1_8lI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_377_1_saT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_378_1_hzz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_379_1_zjY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_37_1_v15.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_380_1_TRi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_381_1_G9w.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_382_1_tl9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_383_1_6FP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_384_1_kds.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_385_1_uBj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_386_1_PLv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_387_1_EW1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_388_1_btb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_389_1_pEn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_38_1_88r.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_390_1_55q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_391_1_rU6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_392_1_2sX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_393_1_qnP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_394_1_bhe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_395_1_Wck.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_396_1_DRx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_397_1_kRk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_398_1_wUg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_399_1_lZp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_39_1_3WF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_3_1_zUJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_400_1_yIB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_401_1_atw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_402_1_G5u.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_403_1_CJ1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_404_1_z30.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_405_1_6aE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_406_1_TkE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_407_1_XNL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_408_1_3KQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_409_1_TDb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_40_1_szT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_410_1_ey6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_411_1_ltQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_412_1_NGE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_413_1_qdq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_414_1_bDK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_415_1_KdV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_416_1_fRK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_417_1_pxm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_418_1_p2Z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_419_1_kES.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_41_1_Gm2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_420_1_HfJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_421_1_ymB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_422_1_Vbc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_423_1_UOV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_424_1_dSi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_425_1_AZB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_426_1_vts.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_427_1_B44.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_428_1_4q3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_429_1_AQe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_42_1_O8M.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_430_1_Q61.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_431_1_PWd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_432_1_Slx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_433_1_Urz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_434_1_Ryi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_435_1_Syu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_436_1_pP2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_437_1_7EX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_438_1_ESY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_439_1_phM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_43_1_yPs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_440_1_onA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_441_1_bOE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_442_1_lEu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_443_1_57C.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_444_1_0QH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_445_1_1yd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_446_1_KnO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_447_1_hGg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_448_1_wvf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_449_1_BFF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_44_1_Rsz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_450_1_MRl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_451_1_B8t.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_452_1_beI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_453_1_5tC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_454_1_qql.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_455_1_XoJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_456_1_7ED.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_457_1_0kG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_458_1_BZZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_459_1_5yO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_45_1_DnT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_460_1_u8m.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_461_2_W3J.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_462_2_UBa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_463_2_7r5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_464_1_AOu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_465_1_daV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_466_1_QGi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_467_1_CVw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_468_1_3Vs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_469_1_MTK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_46_1_GRO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_470_1_z4H.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_471_1_zeC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_472_1_BIt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_473_1_zny.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_474_1_eYI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_475_1_XEm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_476_1_jp5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_477_1_XLj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_478_1_Z39.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_479_1_xhY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_47_1_BUh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_480_1_K0q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_481_1_EW6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_482_1_NWK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_483_1_U25.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_484_1_X4t.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_485_1_CP3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_486_1_5mK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_487_1_mdZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_488_1_QvU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_489_1_ygK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_48_1_xMB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_490_1_OTT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_491_1_TCJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_492_1_FJI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_493_1_OpY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_494_1_ODD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_495_1_cF4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_496_1_4zd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_497_1_aex.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_498_1_Xwu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_499_1_FLz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_49_1_VIg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_4_1_7KC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_500_1_6eQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_501_1_ZQ8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_502_1_9di.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_503_1_OL3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_504_1_Jo8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_505_1_PwA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_506_1_QI1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_507_1_aiU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_508_1_5az.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_509_1_8jd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_50_1_Lnd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_510_1_CV0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_511_1_GqM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_512_2_eJd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_513_2_8W8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_514_1_evo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_515_1_uh0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_516_1_lSX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_517_1_0hh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_518_1_NeS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_519_1_G2U.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_51_1_Z6O.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_520_1_hf7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_521_1_AL8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_522_1_tvj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_523_1_RPO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_524_1_wpQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_525_1_KyX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_526_1_ZDi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_527_1_jRN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_528_1_c5V.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_529_1_j7V.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_52_1_U8d.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_530_1_QfX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_531_1_68j.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_532_1_6eU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_533_1_Qie.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_534_1_QNc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_535_1_R07.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_536_1_X3x.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_537_1_4hK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_538_1_4oy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_539_1_9HC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_53_2_emU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_540_1_til.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_541_1_pRQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_542_1_FGZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_543_1_OFS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_544_1_KUu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_545_1_Lii.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_546_1_fGp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_547_1_knG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_548_1_jRy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_549_1_aRQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_54_2_1Q3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_550_1_373.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_551_1_vWJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_552_1_26w.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_553_1_BRS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_554_1_BMN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_555_1_gm4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_556_1_Mdy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_557_1_Hj1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_558_1_3F5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_559_1_KQn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_55_2_TQD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_560_1_sYn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_561_1_IXy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_562_1_C6b.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_563_1_uJK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_564_1_pUK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_565_1_YjF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_566_1_hdh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_567_1_Nyn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_568_1_321.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_569_1_d7X.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_56_1_BY2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_570_1_rJS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_571_1_XQ3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_572_1_3d2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_573_1_g2O.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_574_1_bZc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_575_1_3FC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_576_1_Wav.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_577_1_23k.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_578_1_p9z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_579_1_OA1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_57_1_e2m.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_580_1_ovo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_581_1_fB1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_582_1_tro.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_583_1_7rG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_584_1_BAd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_585_1_qhj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_586_1_Rob.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_587_1_hct.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_588_1_9Mu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_589_1_LOg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_58_1_dlm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_590_1_jOB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_591_1_ZBd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_592_1_Chl.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_593_1_kpG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_594_1_SKx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_595_1_jsY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_596_1_wz0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_597_1_rZB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_598_1_9yb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_599_1_nSo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_59_1_gSE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_5_1_xMY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_600_1_3NM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_601_1_RtA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_602_1_kpS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_603_1_82i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_604_1_Psw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_605_1_9pq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_606_1_MFg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_607_1_gzt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_608_1_iuJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_609_1_L51.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_60_1_drH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_610_1_8XR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_611_1_aMC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_612_1_2GQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_613_1_oPd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_614_1_c2V.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_615_1_5pc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_616_1_l0X.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_617_1_TyV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_618_1_cX9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_619_1_O7n.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_61_1_Wfy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_620_1_cHI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_621_1_oQI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_622_1_kOf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_623_1_Opu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_624_1_2Fx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_625_1_fOs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_626_1_NcW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_627_1_pzw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_628_1_e36.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_629_1_78H.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_62_1_Pp3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_630_1_0Lu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_631_1_FVy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_632_1_tka.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_633_1_yq4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_634_1_pDG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_635_1_wSc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_636_1_KBg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_637_1_nwX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_638_1_gDN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_639_1_kTx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_63_1_UyA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_640_1_Mcs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_641_1_ayn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_642_1_Gbx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_643_1_wm1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_644_1_xwN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_645_1_wQq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_646_1_4f8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_647_1_JQK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_648_1_pwh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_649_1_R0P.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_64_1_w87.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_650_1_DWA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_651_1_WWn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_652_1_dlt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_653_1_Zme.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_654_1_FCk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_655_1_dmu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_656_1_wMm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_657_1_Jos.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_658_1_Q7n.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_659_1_9UI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_65_1_aP1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_660_1_NZn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_661_1_hhX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_662_1_q50.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_663_1_Fzr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_664_1_z2m.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_665_1_zbU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_666_1_W5T.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_667_1_uwg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_668_1_8HC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_669_1_7Y3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_66_1_Tqk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_670_1_XBn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_671_1_tNV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_672_1_kgK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_673_1_tQN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_674_1_1R5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_675_1_UyG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_676_1_BoD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_677_1_D7S.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_678_1_vF6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_679_1_M1z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_67_1_Iat.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_680_1_4zW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_681_1_a0M.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_682_1_OZ6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_683_1_bv8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_684_1_GqU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_685_1_nGS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_686_1_HcZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_687_1_Xgu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_688_1_HHa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_689_1_0po.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_68_1_oi7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_690_1_FTi.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_691_1_SFj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_692_1_a1Z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_693_1_FbS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_694_1_DyK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_695_1_2jp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_696_1_uEv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_697_1_drq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_698_1_i1h.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_699_1_58p.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_69_1_Do0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_6_1_klp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_700_1_BL3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_701_1_o8t.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_702_1_8ro.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_703_1_CoE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_704_1_Uor.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_705_1_0LO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_706_1_PDQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_707_1_xy7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_708_1_RCZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_709_1_9wI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_70_1_Y3g.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_710_1_L2A.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_711_1_2og.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_712_1_Z8s.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_713_1_2lU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_714_1_bSN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_715_1_nc3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_716_1_cGR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_717_1_y4r.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_718_1_e4E.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_719_1_jB1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_71_1_Ieh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_720_1_mrm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_721_1_z8l.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_722_1_bOD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_723_1_091.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_724_1_RM4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_725_1_Lx6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_726_1_C86.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_727_1_2jF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_728_1_N3Z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_729_1_zSE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_72_1_3xE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_730_1_rvr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_731_1_LGq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_732_1_FTL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_733_1_8wO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_734_1_dPo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_735_1_0X1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_736_1_Tw0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_737_1_bJ5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_738_2_CQH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_739_2_85M.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_73_1_iGE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_740_2_4TZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_741_1_Zbe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_742_1_2ct.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_743_1_8e1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_744_1_2w0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_745_1_1Gd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_746_1_maY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_747_1_Knk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_748_1_EJr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_749_1_OEo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_74_1_eEy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_750_1_jye.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_751_1_Ntb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_752_1_H08.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_753_1_Gau.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_754_1_SgG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_755_1_lrf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_756_1_nL9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_757_1_N6d.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_758_1_d9B.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_759_1_v6c.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_75_1_qc9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_760_1_6iY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_761_1_FWq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_762_1_zgS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_763_1_c0X.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_764_1_myK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_765_1_rbx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_766_1_oyF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_767_1_Rkd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_768_1_hwQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_769_1_ThF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_76_1_z4H.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_770_1_PPQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_771_1_VyI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_772_1_dgQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_773_1_AC7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_774_1_AHV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_775_1_B2N.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_776_1_30m.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_777_1_zBj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_778_1_jL5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_779_1_tSj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_77_1_9iw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_780_1_vHd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_781_1_7OD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_782_1_c7l.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_783_1_9Ku.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_784_1_BfY.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_785_1_ei5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_786_1_pG6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_787_1_b2c.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_788_1_pj7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_789_1_YOd.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_78_1_QML.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_790_1_Ips.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_791_1_VTK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_792_1_iCa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_793_1_v0U.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_794_1_hhk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_795_1_aHK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_796_2_7pg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_797_2_Ttc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_798_2_MBB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_799_1_N60.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_79_1_sOR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_7_1_qzV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_800_1_hY4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_801_1_3aL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_802_1_oqw.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_803_1_tqQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_804_1_kbI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_805_1_QoM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_806_1_4e6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_807_1_5LJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_808_1_NqB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_809_1_hQm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_80_1_uPx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_810_1_VAG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_811_1_D4K.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_812_1_n0u.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_813_1_n0j.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_814_1_yB7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_815_1_Wn4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_816_1_CKk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_817_1_ADN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_818_1_YF8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_819_1_hjB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_81_1_KMZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_820_1_lpU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_821_1_Jew.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_822_1_Ndp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_823_1_iX5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_824_1_5jF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_825_1_X9T.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_826_1_vfr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_827_1_irF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_828_1_ySc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_829_1_Oce.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_82_1_HxA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_830_1_Zjo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_831_1_nex.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_832_1_2QO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_833_1_gtQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_834_1_yQb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_835_1_ArB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_836_1_dvZ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_837_1_40Y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_838_1_rs1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_839_1_DSK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_83_1_QH3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_840_1_nh7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_841_1_m52.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_842_1_T69.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_843_1_OCo.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_844_1_hC6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_845_1_YY2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_846_1_12z.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_847_1_i6S.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_848_1_3GD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_849_1_RXr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_84_1_X1f.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_850_1_wQj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_851_1_Eez.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_852_1_oE3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_853_1_32o.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_854_1_ynH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_855_1_Tjp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_856_1_SlO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_857_1_MuR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_858_1_nLJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_859_1_SwU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_85_1_nHT.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_860_1_Nl6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_861_1_312.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_862_1_jrF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_863_1_AYA.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_864_1_kD1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_865_1_cLr.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_866_1_ocG.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_867_1_vZL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_868_1_W5n.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_869_1_ypv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_86_1_PZV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_870_1_w6i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_871_1_Bjq.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_872_1_nQc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_873_1_5Hz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_874_1_eVf.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_875_1_uNF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_876_1_8M1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_877_1_ZyC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_878_1_twa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_879_1_U0q.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_87_1_3B4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_880_1_4MS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_881_1_FAR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_882_1_0UJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_883_1_jTa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_884_1_sRL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_885_1_Srs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_886_1_7Mu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_887_1_3Kg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_888_1_TDS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_889_1_iA4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_88_1_Fu6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_890_1_mEE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_891_1_ZhR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_892_1_U0i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_893_1_XC0.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_894_1_mVD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_895_1_Gyk.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_896_1_zEe.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_897_1_ElI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_898_1_vzt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_899_1_cBD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_89_1_2q8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_8_1_IcJ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_900_1_V5E.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_901_1_tzc.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_902_1_ViL.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_903_1_XkX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_904_2_SEX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_905_2_zio.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_906_2_jwK.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_907_1_OL2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_908_1_Oft.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_909_1_xQt.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_90_1_KKP.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_910_1_E62.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_911_1_ocC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_912_1_FMj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_913_1_Aac.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_914_1_wnz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_915_1_zf2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_916_1_qeH.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_917_1_RvN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_918_1_bgb.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_919_1_uf9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_91_1_r0P.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_920_1_F8K.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_921_1_6W3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_922_1_QgM.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_923_1_6qj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_924_1_Ug7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_925_1_Nbm.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_926_1_6LW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_927_1_9Cp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_928_1_lAv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_929_1_VDa.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_92_1_J8T.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_930_1_oJ6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_931_1_MVh.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_932_1_gLS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_933_1_5tz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_934_1_CM5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_935_1_h0G.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_936_1_iyu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_937_1_fOR.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_938_1_c6C.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_939_1_k5P.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_93_1_qvB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_940_1_YVE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_941_1_do1.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_942_1_iRI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_943_1_KNO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_944_1_Y7K.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_945_1_mbB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_946_1_9ak.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_947_1_TRg.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_948_1_uIU.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_949_1_EOz.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_94_1_8sC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_950_1_Mm3.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_951_1_kF4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_952_1_grs.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_953_1_wDN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_954_1_sKD.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_955_1_jsB.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_956_1_DW6.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_957_1_0Ni.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_958_1_K2W.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_959_1_LBW.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_95_1_3Qn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_960_1_Sj4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_961_1_ZNC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_962_1_Zvv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_963_1_eIC.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_964_1_OPI.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_965_1_Gar.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_966_1_fv2.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_967_1_GpF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_968_1_O4i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_969_1_qB5.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_96_1_495.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_970_1_4BN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_971_1_EMx.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_972_1_lyu.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_973_1_Y3M.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_974_1_a9y.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_975_1_VE4.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_976_1_K3G.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_977_1_MiS.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_978_1_G1W.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_979_1_6lQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_97_1_RY8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_980_1_MdV.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_981_1_ygO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_982_1_cJF.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_983_1_v0h.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_984_1_9fj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_985_1_r7i.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_986_2_5Nn.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_987_2_NRN.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_988_2_4gv.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_989_1_dT8.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_98_1_wu9.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_990_1_nDX.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_991_1_gX7.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_992_1_82d.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_993_1_Ukp.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_994_1_0wj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_995_1_dFj.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_996_1_2sO.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_997_1_KeE.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_998_1_wfy.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_999_1_GxQ.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_99_1_p1J.root',
-'/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_9_1_EG4.root']
+inputFiles = [
+    '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1000_1_4DA.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1001_1_and.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_100_1_Fak.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_101_1_CL0.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_102_1_Ki6.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_103_1_KdS.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_104_1_eZV.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_105_1_8Sr.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_106_1_zjs.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_107_1_7LO.root'
+  , '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_108_1_8AW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_109_1_0b6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_10_1_H5s.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_110_1_oKj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_111_1_iTu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_112_1_RUI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_113_1_gsX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_114_1_8ME.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_115_1_0Oq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_116_1_rnZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_117_2_Qsx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_118_2_m5Y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_119_2_ogX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_11_1_mzd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_120_1_mbw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_121_1_yUA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_122_1_J9Y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_123_1_0sO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_124_1_6rb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_125_1_VmT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_126_1_0fa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_127_1_tKo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_128_1_Pom.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_129_1_XI2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_12_1_GnI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_130_1_jOs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_131_1_Ln8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_132_1_pq0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_133_1_7VK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_134_1_SIC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_135_1_k2H.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_136_1_aOO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_137_1_yT0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_138_1_1GF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_139_1_gYG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_13_1_sPx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_140_1_IC7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_141_1_CHi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_142_1_mq6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_143_1_epD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_144_1_ZpU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_145_1_FKY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_146_1_7ZX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_147_1_3ML.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_148_1_WqX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_149_1_Oki.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_14_1_H60.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_150_1_W78.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_151_1_hOO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_152_1_wyd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_153_1_AVr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_154_1_DbA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_155_1_xRg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_156_1_RA3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_157_1_nKB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_158_1_yy4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_159_1_FEW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_15_1_CR2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_160_1_6hp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_161_1_Co2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_162_1_Mly.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_163_1_4Kw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_164_1_ZVC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_165_1_yM6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_166_1_gxv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_167_1_p4o.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_168_1_bG6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_169_1_qb8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_16_1_i5v.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_170_1_TuE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_171_1_dg8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_172_1_6lt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_173_1_lcF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_174_1_qfe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_175_1_LzF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_176_1_iGl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_177_1_agh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_178_1_2bm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_179_1_OKX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_17_1_fcK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_180_1_bu6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_181_1_gUy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_182_1_TXp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_183_1_qnu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_184_1_vOP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_185_1_Rwp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_186_1_1nt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_187_1_YuJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_188_1_fjD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_189_1_3gc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_18_1_ZAI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_190_1_0fu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_191_1_918.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_192_1_kcm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_193_1_gxH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_194_1_lmy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_195_1_Cgh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_196_1_4Gi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_197_2_RWK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_198_2_Cbf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_199_2_UkP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_19_1_w5y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_1_1_I7w.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_200_1_i2I.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_201_1_SHT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_202_1_7OH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_203_1_Q9s.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_204_1_pxz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_205_1_q0Z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_206_1_sbk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_207_1_wmi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_208_1_ncR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_209_1_NOL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_20_1_Rhu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_210_1_PQ6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_211_1_1ql.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_212_1_SHV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_213_1_Yu9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_214_1_Ivh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_215_1_VNu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_216_1_x37.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_217_1_OtS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_218_1_oyf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_219_1_CNd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_21_1_Sl6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_220_1_603.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_221_1_ZlT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_222_1_aYN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_223_1_5vu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_224_1_NnG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_225_1_wZ2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_226_1_eQX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_227_1_26j.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_228_1_766.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_229_1_AgW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_22_1_Gct.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_230_1_8tP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_231_1_Rm3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_232_1_kci.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_233_1_IZt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_234_1_ox7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_235_1_8z8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_236_1_3Yz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_237_1_9B0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_238_1_dMI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_239_1_4X8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_23_1_8RZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_240_1_atc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_241_1_FCU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_242_1_1rD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_243_1_4Fb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_244_1_xbe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_245_1_0EG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_246_1_4A8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_247_1_UzK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_248_1_jRY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_249_1_vHu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_24_1_hwl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_250_1_h8Q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_251_1_gP3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_252_1_Fxq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_253_1_em4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_254_1_bLk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_255_1_h9A.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_256_1_3Vu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_257_1_8lu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_258_1_8WQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_259_1_mYf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_25_1_9EJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_260_1_Lav.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_261_1_giA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_262_1_c85.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_263_1_qd8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_264_1_B1h.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_265_1_GuJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_266_1_ySL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_267_1_wmR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_268_1_GiW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_269_1_8Gx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_26_1_diw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_270_1_B9Q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_271_1_nxV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_272_1_w8u.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_273_1_HCp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_274_1_KA6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_275_1_53Y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_276_1_8gN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_277_1_ILe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_278_1_EZ3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_279_1_SKF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_27_1_Ryp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_280_1_yf9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_281_1_yR0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_282_1_vRv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_283_1_IyI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_284_1_e1V.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_285_1_Chb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_286_1_jUd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_287_1_OXz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_288_1_XUH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_289_1_xg7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_28_1_rOn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_290_1_VCL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_291_1_xoO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_292_1_AOY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_293_1_Umd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_294_1_3lG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_295_1_aJM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_296_1_epl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_297_1_f7n.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_298_1_Rps.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_299_1_Fp5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_29_1_cTG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_2_1_esB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_300_1_WqV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_301_1_52G.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_302_1_haA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_303_1_qOl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_304_1_iKN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_305_1_Mbx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_306_1_11I.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_307_1_EzL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_308_1_5TX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_309_1_jeR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_30_1_X8q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_310_1_HTn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_311_1_cAQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_312_1_pVa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_313_1_Tj4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_314_1_wQG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_315_1_gIt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_316_1_tAE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_317_1_nkf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_318_1_Hrp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_319_1_LRO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_31_1_HZm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_320_1_iLP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_321_1_laP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_322_1_hDK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_323_1_jvG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_324_1_Y0o.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_325_1_4nG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_326_1_9ME.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_327_1_zlq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_328_1_a42.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_329_1_WcW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_32_1_aPP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_330_1_tfE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_331_1_hYN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_332_1_j9q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_333_1_htq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_334_1_7eA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_335_1_zWT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_336_1_svq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_337_1_JNZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_338_1_jTw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_339_1_FoZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_33_1_65V.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_340_1_JLW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_341_1_AL9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_342_1_bQ2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_343_1_AMI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_344_1_tn8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_345_1_XPY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_346_1_ygq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_347_1_LAp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_348_1_hvX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_349_1_jGa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_34_1_SvX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_350_1_R35.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_351_1_kYb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_352_1_H0i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_353_1_cYl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_354_1_1km.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_355_1_Spx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_356_1_RWe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_357_1_Qc2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_358_1_slB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_359_1_yPl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_35_1_4PF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_360_1_KDf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_361_1_PkI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_362_1_WWr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_363_1_3fj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_364_1_ThW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_365_1_xa9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_366_1_prX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_367_1_BiV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_368_1_25W.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_369_1_ZKm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_36_1_R7D.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_370_1_H5o.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_371_1_Ppr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_372_1_iPQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_373_1_tbE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_374_1_6Xo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_375_1_ECY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_376_1_8lI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_377_1_saT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_378_1_hzz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_379_1_zjY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_37_1_v15.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_380_1_TRi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_381_1_G9w.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_382_1_tl9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_383_1_6FP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_384_1_kds.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_385_1_uBj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_386_1_PLv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_387_1_EW1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_388_1_btb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_389_1_pEn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_38_1_88r.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_390_1_55q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_391_1_rU6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_392_1_2sX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_393_1_qnP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_394_1_bhe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_395_1_Wck.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_396_1_DRx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_397_1_kRk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_398_1_wUg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_399_1_lZp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_39_1_3WF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_3_1_zUJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_400_1_yIB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_401_1_atw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_402_1_G5u.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_403_1_CJ1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_404_1_z30.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_405_1_6aE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_406_1_TkE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_407_1_XNL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_408_1_3KQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_409_1_TDb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_40_1_szT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_410_1_ey6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_411_1_ltQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_412_1_NGE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_413_1_qdq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_414_1_bDK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_415_1_KdV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_416_1_fRK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_417_1_pxm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_418_1_p2Z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_419_1_kES.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_41_1_Gm2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_420_1_HfJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_421_1_ymB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_422_1_Vbc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_423_1_UOV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_424_1_dSi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_425_1_AZB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_426_1_vts.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_427_1_B44.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_428_1_4q3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_429_1_AQe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_42_1_O8M.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_430_1_Q61.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_431_1_PWd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_432_1_Slx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_433_1_Urz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_434_1_Ryi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_435_1_Syu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_436_1_pP2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_437_1_7EX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_438_1_ESY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_439_1_phM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_43_1_yPs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_440_1_onA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_441_1_bOE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_442_1_lEu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_443_1_57C.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_444_1_0QH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_445_1_1yd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_446_1_KnO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_447_1_hGg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_448_1_wvf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_449_1_BFF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_44_1_Rsz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_450_1_MRl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_451_1_B8t.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_452_1_beI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_453_1_5tC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_454_1_qql.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_455_1_XoJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_456_1_7ED.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_457_1_0kG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_458_1_BZZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_459_1_5yO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_45_1_DnT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_460_1_u8m.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_461_2_W3J.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_462_2_UBa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_463_2_7r5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_464_1_AOu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_465_1_daV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_466_1_QGi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_467_1_CVw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_468_1_3Vs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_469_1_MTK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_46_1_GRO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_470_1_z4H.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_471_1_zeC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_472_1_BIt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_473_1_zny.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_474_1_eYI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_475_1_XEm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_476_1_jp5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_477_1_XLj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_478_1_Z39.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_479_1_xhY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_47_1_BUh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_480_1_K0q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_481_1_EW6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_482_1_NWK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_483_1_U25.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_484_1_X4t.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_485_1_CP3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_486_1_5mK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_487_1_mdZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_488_1_QvU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_489_1_ygK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_48_1_xMB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_490_1_OTT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_491_1_TCJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_492_1_FJI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_493_1_OpY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_494_1_ODD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_495_1_cF4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_496_1_4zd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_497_1_aex.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_498_1_Xwu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_499_1_FLz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_49_1_VIg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_4_1_7KC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_500_1_6eQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_501_1_ZQ8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_502_1_9di.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_503_1_OL3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_504_1_Jo8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_505_1_PwA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_506_1_QI1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_507_1_aiU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_508_1_5az.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_509_1_8jd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_50_1_Lnd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_510_1_CV0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_511_1_GqM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_512_2_eJd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_513_2_8W8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_514_1_evo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_515_1_uh0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_516_1_lSX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_517_1_0hh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_518_1_NeS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_519_1_G2U.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_51_1_Z6O.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_520_1_hf7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_521_1_AL8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_522_1_tvj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_523_1_RPO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_524_1_wpQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_525_1_KyX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_526_1_ZDi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_527_1_jRN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_528_1_c5V.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_529_1_j7V.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_52_1_U8d.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_530_1_QfX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_531_1_68j.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_532_1_6eU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_533_1_Qie.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_534_1_QNc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_535_1_R07.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_536_1_X3x.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_537_1_4hK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_538_1_4oy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_539_1_9HC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_53_2_emU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_540_1_til.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_541_1_pRQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_542_1_FGZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_543_1_OFS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_544_1_KUu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_545_1_Lii.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_546_1_fGp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_547_1_knG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_548_1_jRy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_549_1_aRQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_54_2_1Q3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_550_1_373.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_551_1_vWJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_552_1_26w.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_553_1_BRS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_554_1_BMN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_555_1_gm4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_556_1_Mdy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_557_1_Hj1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_558_1_3F5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_559_1_KQn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_55_2_TQD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_560_1_sYn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_561_1_IXy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_562_1_C6b.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_563_1_uJK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_564_1_pUK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_565_1_YjF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_566_1_hdh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_567_1_Nyn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_568_1_321.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_569_1_d7X.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_56_1_BY2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_570_1_rJS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_571_1_XQ3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_572_1_3d2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_573_1_g2O.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_574_1_bZc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_575_1_3FC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_576_1_Wav.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_577_1_23k.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_578_1_p9z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_579_1_OA1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_57_1_e2m.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_580_1_ovo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_581_1_fB1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_582_1_tro.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_583_1_7rG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_584_1_BAd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_585_1_qhj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_586_1_Rob.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_587_1_hct.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_588_1_9Mu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_589_1_LOg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_58_1_dlm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_590_1_jOB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_591_1_ZBd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_592_1_Chl.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_593_1_kpG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_594_1_SKx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_595_1_jsY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_596_1_wz0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_597_1_rZB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_598_1_9yb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_599_1_nSo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_59_1_gSE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_5_1_xMY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_600_1_3NM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_601_1_RtA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_602_1_kpS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_603_1_82i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_604_1_Psw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_605_1_9pq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_606_1_MFg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_607_1_gzt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_608_1_iuJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_609_1_L51.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_60_1_drH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_610_1_8XR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_611_1_aMC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_612_1_2GQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_613_1_oPd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_614_1_c2V.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_615_1_5pc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_616_1_l0X.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_617_1_TyV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_618_1_cX9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_619_1_O7n.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_61_1_Wfy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_620_1_cHI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_621_1_oQI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_622_1_kOf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_623_1_Opu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_624_1_2Fx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_625_1_fOs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_626_1_NcW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_627_1_pzw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_628_1_e36.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_629_1_78H.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_62_1_Pp3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_630_1_0Lu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_631_1_FVy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_632_1_tka.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_633_1_yq4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_634_1_pDG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_635_1_wSc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_636_1_KBg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_637_1_nwX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_638_1_gDN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_639_1_kTx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_63_1_UyA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_640_1_Mcs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_641_1_ayn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_642_1_Gbx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_643_1_wm1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_644_1_xwN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_645_1_wQq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_646_1_4f8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_647_1_JQK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_648_1_pwh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_649_1_R0P.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_64_1_w87.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_650_1_DWA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_651_1_WWn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_652_1_dlt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_653_1_Zme.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_654_1_FCk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_655_1_dmu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_656_1_wMm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_657_1_Jos.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_658_1_Q7n.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_659_1_9UI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_65_1_aP1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_660_1_NZn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_661_1_hhX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_662_1_q50.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_663_1_Fzr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_664_1_z2m.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_665_1_zbU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_666_1_W5T.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_667_1_uwg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_668_1_8HC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_669_1_7Y3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_66_1_Tqk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_670_1_XBn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_671_1_tNV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_672_1_kgK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_673_1_tQN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_674_1_1R5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_675_1_UyG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_676_1_BoD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_677_1_D7S.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_678_1_vF6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_679_1_M1z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_67_1_Iat.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_680_1_4zW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_681_1_a0M.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_682_1_OZ6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_683_1_bv8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_684_1_GqU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_685_1_nGS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_686_1_HcZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_687_1_Xgu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_688_1_HHa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_689_1_0po.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_68_1_oi7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_690_1_FTi.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_691_1_SFj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_692_1_a1Z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_693_1_FbS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_694_1_DyK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_695_1_2jp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_696_1_uEv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_697_1_drq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_698_1_i1h.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_699_1_58p.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_69_1_Do0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_6_1_klp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_700_1_BL3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_701_1_o8t.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_702_1_8ro.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_703_1_CoE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_704_1_Uor.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_705_1_0LO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_706_1_PDQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_707_1_xy7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_708_1_RCZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_709_1_9wI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_70_1_Y3g.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_710_1_L2A.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_711_1_2og.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_712_1_Z8s.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_713_1_2lU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_714_1_bSN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_715_1_nc3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_716_1_cGR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_717_1_y4r.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_718_1_e4E.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_719_1_jB1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_71_1_Ieh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_720_1_mrm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_721_1_z8l.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_722_1_bOD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_723_1_091.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_724_1_RM4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_725_1_Lx6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_726_1_C86.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_727_1_2jF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_728_1_N3Z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_729_1_zSE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_72_1_3xE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_730_1_rvr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_731_1_LGq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_732_1_FTL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_733_1_8wO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_734_1_dPo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_735_1_0X1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_736_1_Tw0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_737_1_bJ5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_738_2_CQH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_739_2_85M.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_73_1_iGE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_740_2_4TZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_741_1_Zbe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_742_1_2ct.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_743_1_8e1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_744_1_2w0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_745_1_1Gd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_746_1_maY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_747_1_Knk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_748_1_EJr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_749_1_OEo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_74_1_eEy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_750_1_jye.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_751_1_Ntb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_752_1_H08.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_753_1_Gau.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_754_1_SgG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_755_1_lrf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_756_1_nL9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_757_1_N6d.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_758_1_d9B.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_759_1_v6c.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_75_1_qc9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_760_1_6iY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_761_1_FWq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_762_1_zgS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_763_1_c0X.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_764_1_myK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_765_1_rbx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_766_1_oyF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_767_1_Rkd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_768_1_hwQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_769_1_ThF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_76_1_z4H.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_770_1_PPQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_771_1_VyI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_772_1_dgQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_773_1_AC7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_774_1_AHV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_775_1_B2N.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_776_1_30m.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_777_1_zBj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_778_1_jL5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_779_1_tSj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_77_1_9iw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_780_1_vHd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_781_1_7OD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_782_1_c7l.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_783_1_9Ku.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_784_1_BfY.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_785_1_ei5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_786_1_pG6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_787_1_b2c.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_788_1_pj7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_789_1_YOd.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_78_1_QML.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_790_1_Ips.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_791_1_VTK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_792_1_iCa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_793_1_v0U.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_794_1_hhk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_795_1_aHK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_796_2_7pg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_797_2_Ttc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_798_2_MBB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_799_1_N60.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_79_1_sOR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_7_1_qzV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_800_1_hY4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_801_1_3aL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_802_1_oqw.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_803_1_tqQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_804_1_kbI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_805_1_QoM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_806_1_4e6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_807_1_5LJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_808_1_NqB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_809_1_hQm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_80_1_uPx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_810_1_VAG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_811_1_D4K.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_812_1_n0u.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_813_1_n0j.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_814_1_yB7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_815_1_Wn4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_816_1_CKk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_817_1_ADN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_818_1_YF8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_819_1_hjB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_81_1_KMZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_820_1_lpU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_821_1_Jew.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_822_1_Ndp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_823_1_iX5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_824_1_5jF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_825_1_X9T.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_826_1_vfr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_827_1_irF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_828_1_ySc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_829_1_Oce.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_82_1_HxA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_830_1_Zjo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_831_1_nex.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_832_1_2QO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_833_1_gtQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_834_1_yQb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_835_1_ArB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_836_1_dvZ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_837_1_40Y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_838_1_rs1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_839_1_DSK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_83_1_QH3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_840_1_nh7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_841_1_m52.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_842_1_T69.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_843_1_OCo.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_844_1_hC6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_845_1_YY2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_846_1_12z.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_847_1_i6S.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_848_1_3GD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_849_1_RXr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_84_1_X1f.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_850_1_wQj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_851_1_Eez.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_852_1_oE3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_853_1_32o.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_854_1_ynH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_855_1_Tjp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_856_1_SlO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_857_1_MuR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_858_1_nLJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_859_1_SwU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_85_1_nHT.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_860_1_Nl6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_861_1_312.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_862_1_jrF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_863_1_AYA.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_864_1_kD1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_865_1_cLr.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_866_1_ocG.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_867_1_vZL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_868_1_W5n.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_869_1_ypv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_86_1_PZV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_870_1_w6i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_871_1_Bjq.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_872_1_nQc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_873_1_5Hz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_874_1_eVf.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_875_1_uNF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_876_1_8M1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_877_1_ZyC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_878_1_twa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_879_1_U0q.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_87_1_3B4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_880_1_4MS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_881_1_FAR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_882_1_0UJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_883_1_jTa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_884_1_sRL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_885_1_Srs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_886_1_7Mu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_887_1_3Kg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_888_1_TDS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_889_1_iA4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_88_1_Fu6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_890_1_mEE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_891_1_ZhR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_892_1_U0i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_893_1_XC0.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_894_1_mVD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_895_1_Gyk.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_896_1_zEe.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_897_1_ElI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_898_1_vzt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_899_1_cBD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_89_1_2q8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_8_1_IcJ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_900_1_V5E.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_901_1_tzc.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_902_1_ViL.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_903_1_XkX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_904_2_SEX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_905_2_zio.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_906_2_jwK.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_907_1_OL2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_908_1_Oft.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_909_1_xQt.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_90_1_KKP.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_910_1_E62.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_911_1_ocC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_912_1_FMj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_913_1_Aac.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_914_1_wnz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_915_1_zf2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_916_1_qeH.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_917_1_RvN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_918_1_bgb.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_919_1_uf9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_91_1_r0P.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_920_1_F8K.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_921_1_6W3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_922_1_QgM.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_923_1_6qj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_924_1_Ug7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_925_1_Nbm.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_926_1_6LW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_927_1_9Cp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_928_1_lAv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_929_1_VDa.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_92_1_J8T.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_930_1_oJ6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_931_1_MVh.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_932_1_gLS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_933_1_5tz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_934_1_CM5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_935_1_h0G.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_936_1_iyu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_937_1_fOR.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_938_1_c6C.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_939_1_k5P.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_93_1_qvB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_940_1_YVE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_941_1_do1.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_942_1_iRI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_943_1_KNO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_944_1_Y7K.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_945_1_mbB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_946_1_9ak.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_947_1_TRg.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_948_1_uIU.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_949_1_EOz.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_94_1_8sC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_950_1_Mm3.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_951_1_kF4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_952_1_grs.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_953_1_wDN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_954_1_sKD.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_955_1_jsB.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_956_1_DW6.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_957_1_0Ni.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_958_1_K2W.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_959_1_LBW.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_95_1_3Qn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_960_1_Sj4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_961_1_ZNC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_962_1_Zvv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_963_1_eIC.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_964_1_OPI.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_965_1_Gar.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_966_1_fv2.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_967_1_GpF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_968_1_O4i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_969_1_qB5.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_96_1_495.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_970_1_4BN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_971_1_EMx.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_972_1_lyu.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_973_1_Y3M.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_974_1_a9y.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_975_1_VE4.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_976_1_K3G.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_977_1_MiS.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_978_1_G1W.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_979_1_6lQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_97_1_RY8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_980_1_MdV.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_981_1_ygO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_982_1_cJF.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_983_1_v0h.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_984_1_9fj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_985_1_r7i.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_986_2_5Nn.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_987_2_NRN.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_988_2_4gv.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_989_1_dT8.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_98_1_wu9.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_990_1_nDX.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_991_1_gX7.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_992_1_82d.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_993_1_Ukp.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_994_1_0wj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_995_1_dFj.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_996_1_2sO.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_997_1_KeE.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_998_1_wfy.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_999_1_GxQ.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_99_1_p1J.root'
+  #, '/cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/outfile_mc_9_1_EG4.root'
+]
