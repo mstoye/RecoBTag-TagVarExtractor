@@ -172,7 +172,7 @@ def main():
     parser.add_option('-c', '--cmssw_cfg', metavar="CMSSW_CFG", dest='cmssw_cfg', action='store', help='CMSSW configuration file template')
     parser.add_option('-o', '--outputdir', metavar='OUTPUTDIR', dest='outputdir', action='store', help='Main output directory for Condor jobs')
     parser.add_option('-n', '--njobs', metavar='NJOBS', action='store', dest='njobs', help='Number of jobs')
-    parser.add_option('-p', '--params', metavar='PARAMS', action='store', dest='params', default='', help='Comma separated list of job input parameters (Optional)')
+    parser.add_option('-p', '--params', metavar='PARAMS', action='store', dest='params', default='', help='Comma separated list of job input parameters (This parameter is optional)')
     parser.add_option('-f', '--fraction', metavar='FRACTION', action='store', dest='fraction', default='1.0', help='Fraction of files to be processed. Default value is 1 (This parameter is optional)')
     parser.add_option('--create-only', action="store_true", dest="create_only", default=False, help="Create the necessary configuration files but skip the job submission (This parameter is optional)")
     parser.add_option('--fnal', action="store_true", dest="fnal", default=False, help="This switch is mandatory if submitting jobs at FNAL")

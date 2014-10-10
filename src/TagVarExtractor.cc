@@ -201,22 +201,22 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.TagVarCSV_trackJetPt              = FatJetInfo.TagVarCSV_trackJetPt[iJet];
       TagVarInfo.TagVarCSV_jetNTracks              = FatJetInfo.TagVarCSV_jetNTracks[iJet];
       TagVarInfo.TagVarCSV_jetNTracksEtaRel        = FatJetInfo.TagVarCSV_jetNTracksEtaRel[iJet];
-      TagVarInfo.TagVarCSV_trackSumJetEtRatio      = FatJetInfo.TagVarCSV_trackSumJetEtRatio[iJet];
-      TagVarInfo.TagVarCSV_trackSumJetDeltaR       = FatJetInfo.TagVarCSV_trackSumJetDeltaR[iJet];
-      TagVarInfo.TagVarCSV_trackSip2dValAboveCharm = FatJetInfo.TagVarCSV_trackSip2dValAboveCharm[iJet];
-      TagVarInfo.TagVarCSV_trackSip2dSigAboveCharm = FatJetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet];
-      TagVarInfo.TagVarCSV_trackSip3dValAboveCharm = FatJetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet];
-      TagVarInfo.TagVarCSV_trackSip3dSigAboveCharm = FatJetInfo.TagVarCSV_trackSip3dSigAboveCharm[iJet];
-      TagVarInfo.TagVarCSV_vertexCategory          = (FatJetInfo.TagVarCSV_vertexCategory[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexCategory[iJet]);
+      TagVarInfo.TagVarCSV_trackSumJetEtRatio      = (FatJetInfo.TagVarCSV_trackSumJetEtRatio[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_trackSumJetEtRatio[iJet]);
+      TagVarInfo.TagVarCSV_trackSumJetDeltaR       = (FatJetInfo.TagVarCSV_trackSumJetDeltaR[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_trackSumJetDeltaR[iJet]);
+      TagVarInfo.TagVarCSV_trackSip2dValAboveCharm = (FatJetInfo.TagVarCSV_trackSip2dValAboveCharm[iJet] < -1000. ? -99. : FatJetInfo.TagVarCSV_trackSip2dValAboveCharm[iJet]);
+      TagVarInfo.TagVarCSV_trackSip2dSigAboveCharm = (FatJetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet] < -1000. ? -99. : FatJetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet]);
+      TagVarInfo.TagVarCSV_trackSip3dValAboveCharm = (FatJetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet] < -1000. ? -99. : FatJetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet]);
+      TagVarInfo.TagVarCSV_trackSip3dSigAboveCharm = (FatJetInfo.TagVarCSV_trackSip3dSigAboveCharm[iJet] < -1000. ? -99. : FatJetInfo.TagVarCSV_trackSip3dSigAboveCharm[iJet]);
+      TagVarInfo.TagVarCSV_vertexCategory          = (FatJetInfo.TagVarCSV_vertexCategory[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_vertexCategory[iJet]);
       TagVarInfo.TagVarCSV_jetNSecondaryVertices   = FatJetInfo.TagVarCSV_jetNSecondaryVertices[iJet];
-      TagVarInfo.TagVarCSV_vertexMass              = (FatJetInfo.TagVarCSV_vertexMass[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexMass[iJet]);
+      TagVarInfo.TagVarCSV_vertexMass              = (FatJetInfo.TagVarCSV_vertexMass[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_vertexMass[iJet]);
       TagVarInfo.TagVarCSV_vertexNTracks           = FatJetInfo.TagVarCSV_vertexNTracks[iJet];
-      TagVarInfo.TagVarCSV_vertexEnergyRatio       = (FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet]);
-      TagVarInfo.TagVarCSV_vertexJetDeltaR         = (FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet]);
+      TagVarInfo.TagVarCSV_vertexEnergyRatio       = (FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_vertexEnergyRatio[iJet]);
+      TagVarInfo.TagVarCSV_vertexJetDeltaR         = (FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_vertexJetDeltaR[iJet]);
       TagVarInfo.TagVarCSV_flightDistance2dVal     = (FatJetInfo.TagVarCSV_flightDistance2dVal[iJet] = -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance2dVal[iJet]);
-      TagVarInfo.TagVarCSV_flightDistance2dSig     = (FatJetInfo.TagVarCSV_flightDistance2dSig[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance2dSig[iJet]);
-      TagVarInfo.TagVarCSV_flightDistance3dVal     = (FatJetInfo.TagVarCSV_flightDistance3dVal[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dVal[iJet]);
-      TagVarInfo.TagVarCSV_flightDistance3dSig     = (FatJetInfo.TagVarCSV_flightDistance3dSig[iJet] == -9999. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dSig[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance2dSig     = (FatJetInfo.TagVarCSV_flightDistance2dSig[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_flightDistance2dSig[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance3dVal     = (FatJetInfo.TagVarCSV_flightDistance3dVal[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dVal[iJet]);
+      TagVarInfo.TagVarCSV_flightDistance3dSig     = (FatJetInfo.TagVarCSV_flightDistance3dSig[iJet] < -1000. ? -1. : FatJetInfo.TagVarCSV_flightDistance3dSig[iJet]);
 
       //loop over tracks to get IPs
       std::vector<float> IP2Ds;
@@ -245,42 +245,67 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
         // if there are no selected tracks
         case 0:
 
-          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_0 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_1 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackSip3dSig_0 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_1 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
           break;
 
         case 1:
 
-          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_0 = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_1 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackSip3dSig_0 = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_1 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
           break;
 
         case 2:
 
-          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = IP2Ds.at(1);
-          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = dummyTrack;
-          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = IP3Ds.at(1);
-          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_0 = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_1 = IP2Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip2dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip2dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackSip3dSig_0 = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_1 = IP3Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
+          TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
+          break;
+
+        case 3:
+
+          TagVarInfo.TagVarCSV_trackSip2dSig_0 = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_1 = IP2Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip2dSig_2 = IP2Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip2dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackSip3dSig_0 = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_1 = IP3Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip3dSig_2 = IP3Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
           break;
 
         default:
 
-          TagVarInfo.TagVarCSV_trackSip2dSig_Leading = IP2Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip2dSig_SecondLeading = IP2Ds.at(1);
-          TagVarInfo.TagVarCSV_trackSip2dSig_ThirdLeading = IP2Ds.at(2);
-          TagVarInfo.TagVarCSV_trackSip3dSig_Leading = IP3Ds.at(0);
-          TagVarInfo.TagVarCSV_trackSip3dSig_SecondLeading = IP3Ds.at(1);
-          TagVarInfo.TagVarCSV_trackSip3dSig_ThirdLeading = IP3Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip2dSig_0 = IP2Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip2dSig_1 = IP2Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip2dSig_2 = IP2Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip2dSig_3 = IP2Ds.at(3);
+
+          TagVarInfo.TagVarCSV_trackSip3dSig_0 = IP3Ds.at(0);
+          TagVarInfo.TagVarCSV_trackSip3dSig_1 = IP3Ds.at(1);
+          TagVarInfo.TagVarCSV_trackSip3dSig_2 = IP3Ds.at(2);
+          TagVarInfo.TagVarCSV_trackSip3dSig_3 = IP3Ds.at(3);
 
       } //end switch on number of tracks for IP
 
@@ -289,30 +314,42 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
         // if there are no etarel tracks
         case 0:
 
-          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = dummyEtaRel;
-          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = dummyEtaRel;
-          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_0 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_1 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_2 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_3 = dummyEtaRel;
           break;
 
         case 1:
 
-          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
-          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = dummyEtaRel;
-          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_0 = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_1 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_2 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_3 = dummyEtaRel;
           break;
 
         case 2:
 
-          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
-          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = etaRels.at(1);
-          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_0 = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_1 = etaRels.at(1);
+          TagVarInfo.TagVarCSV_trackEtaRel_2 = dummyEtaRel;
+          TagVarInfo.TagVarCSV_trackEtaRel_3 = dummyEtaRel;
+          break;
+
+        case 3:
+
+          TagVarInfo.TagVarCSV_trackEtaRel_0 = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_1 = etaRels.at(1);
+          TagVarInfo.TagVarCSV_trackEtaRel_2 = etaRels.at(2);
+          TagVarInfo.TagVarCSV_trackEtaRel_3 = dummyEtaRel;
           break;
 
         default:
 
-          TagVarInfo.TagVarCSV_trackEtaRel_Lowest = etaRels.at(0);
-          TagVarInfo.TagVarCSV_trackEtaRel_SecondLowest = etaRels.at(1);
-          TagVarInfo.TagVarCSV_trackEtaRel_ThirdLowest = etaRels.at(2);
+          TagVarInfo.TagVarCSV_trackEtaRel_0 = etaRels.at(0);
+          TagVarInfo.TagVarCSV_trackEtaRel_1 = etaRels.at(1);
+          TagVarInfo.TagVarCSV_trackEtaRel_2 = etaRels.at(2);
+          TagVarInfo.TagVarCSV_trackEtaRel_3 = etaRels.at(3);
 
       } //end switch on number of etarel tracks
 
