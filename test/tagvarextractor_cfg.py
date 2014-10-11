@@ -34,6 +34,16 @@ options.register('dumpPythonCfg', '',
     VarParsing.varType.string,
     "Name of the rewritten cfg file"
 )
+options.register('inputTDir', 'btagana',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "TDirectory containing the input TTree"
+)
+options.register('varPrefix', '',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "Variable name prefix such as 'JetInfo', 'FatJetInfo' or an empty string"
+)
 options.register('jetPtMin', 100.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
@@ -93,7 +103,8 @@ process.TFileService = cms.Service("TFileService",
 process.tagVars = cms.EDAnalyzer('TagVarExtractor',
     MaxEvents    = cms.int32(options.maxEvents),
     ReportEvery  = cms.int32(options.reportEvery),
-    InputTTree   = cms.string('btagana/ttree'),
+    InputTTree   = cms.string(options.inputTDir+'/ttree'),
+    VarPrefix    = cms.string(options.varPrefix),
     InputFiles   = cms.vstring(inputFiles),
     JetPtMin     = cms.double(options.jetPtMin),
     JetPtMax     = cms.double(options.jetPtMax),

@@ -21,7 +21,6 @@ class TagVarBranches {
 
     // CSV TaggingVariables
     // per jet
-    float TagVarCSV_trackJetPt;                           // track-based jet transverse momentum
     float TagVarCSV_jetNTracks;                           // tracks associated to jet
     float TagVarCSV_jetNTracksEtaRel;                     // tracks associated to jet for which trackEtaRel is calculated
     float TagVarCSV_trackSumJetEtRatio;                   // ratio of track sum transverse energy over jet energy
@@ -53,7 +52,6 @@ class TagVarBranches {
     float TagVarCSV_trackEtaRel_0;                        // lowest track eta relative to jet axis
     float TagVarCSV_trackEtaRel_1;                        // second lowest track eta relative to jet axis
     float TagVarCSV_trackEtaRel_2;                        // third lowest track eta relative to jet axis
-    float TagVarCSV_trackEtaRel_3;                        // fourth lowest track eta relative to jet axis
 
     void RegisterTree(TTree *tree, std::string name="")
     {
@@ -72,7 +70,6 @@ class TagVarBranches {
       //--------------------------------------
       // CSV TaggingVariables
       //--------------------------------------
-      tree->Branch((name+"TagVarCSV_trackJetPt").c_str()               ,&TagVarCSV_trackJetPt               ,(name+"TagVarCSV_trackJetPt/F").c_str()              );
       tree->Branch((name+"TagVarCSV_jetNTracks").c_str()               ,&TagVarCSV_jetNTracks               ,(name+"TagVarCSV_jetNTracks/F").c_str()              );
       tree->Branch((name+"TagVarCSV_jetNTracksEtaRel").c_str()         ,&TagVarCSV_jetNTracksEtaRel         ,(name+"TagVarCSV_jetNTracksEtaRel/F").c_str()        );
       tree->Branch((name+"TagVarCSV_trackSumJetEtRatio").c_str()       ,&TagVarCSV_trackSumJetEtRatio       ,(name+"TagVarCSV_trackSumJetEtRatio/F").c_str()      );
@@ -102,7 +99,6 @@ class TagVarBranches {
       tree->Branch((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0            ,(name+"TagVarCSV_trackEtaRel_0/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1            ,(name+"TagVarCSV_trackEtaRel_1/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2            ,(name+"TagVarCSV_trackEtaRel_2/F").c_str()           );
-      tree->Branch((name+"TagVarCSV_trackEtaRel_3").c_str()            ,&TagVarCSV_trackEtaRel_3            ,(name+"TagVarCSV_trackEtaRel_3/F").c_str()           );
 
     }
 
@@ -123,7 +119,6 @@ class TagVarBranches {
       //--------------------------------------
       // CSV TaggingVariables
       //--------------------------------------
-      tree->SetBranchAddress((name+"TagVarCSV_trackJetPt").c_str()               ,&TagVarCSV_trackJetPt              );
       tree->SetBranchAddress((name+"TagVarCSV_jetNTracks").c_str()               ,&TagVarCSV_jetNTracks              );
       tree->SetBranchAddress((name+"TagVarCSV_jetNTracksEtaRel").c_str()         ,&TagVarCSV_jetNTracksEtaRel        );
       tree->SetBranchAddress((name+"TagVarCSV_trackSumJetEtRatio").c_str()       ,&TagVarCSV_trackSumJetEtRatio      );
@@ -153,7 +148,6 @@ class TagVarBranches {
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2           );
-      tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_3").c_str()            ,&TagVarCSV_trackEtaRel_3           );
 
     }
 };

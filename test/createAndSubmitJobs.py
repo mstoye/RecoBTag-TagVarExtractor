@@ -160,7 +160,7 @@ exit $exitcode
 
 
 usage = """Usage: %prog [-m MATCH] -i INPUTDIR -c CMSSW_CFG -o OUTPUTDIR -n NJOBS [-p PARAMS -f 1.0 --create-only]\n
-Example: ./createAndSubmitJobs.py -i /cms/ferencek/store/skaplan/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3/AODSIM/ -c tagvarextractor_cfg.py -o output_dir -n 50 -p maxEvents=-1,reportEvery=1000,wantSummary=True"""
+Example: ./createAndSubmitJobs.py -i /cms/ferencek/store/ferencek/QCD_Pt-120to170_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v3_BTagAnalyzer_V02-05-03/ -c tagvarextractor_cfg.py -o output_dir -n 60 -p maxEvents=-1,reportEvery=1000,wantSummary=True"""
 
 
 def main():
