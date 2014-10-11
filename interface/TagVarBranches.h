@@ -48,6 +48,10 @@ class TagVarBranches {
     float TagVarCSV_trackSip3dSig_1;                      // second highest track 3D signed IP of tracks belonging to a given jet
     float TagVarCSV_trackSip3dSig_2;                      // third highest track 3D signed IP of tracks belonging to a given jet
     float TagVarCSV_trackSip3dSig_3;                      // fourth highest track 3D signed IP of tracks belonging to a given jet
+    float TagVarCSV_trackPtRel_0;                         // highest track transverse momentum, relative to the jet axis
+    float TagVarCSV_trackPtRel_1;                         // second highest track transverse momentum, relative to the jet axis
+    float TagVarCSV_trackPtRel_2;                         // third highest track transverse momentum, relative to the jet axis
+    float TagVarCSV_trackPtRel_3;                         // fourth highest track transverse momentum, relative to the jet axis
     // per jet per etaRel track
     float TagVarCSV_trackEtaRel_0;                        // lowest track eta relative to jet axis
     float TagVarCSV_trackEtaRel_1;                        // second lowest track eta relative to jet axis
@@ -96,6 +100,10 @@ class TagVarBranches {
       tree->Branch((name+"TagVarCSV_trackSip3dSig_1").c_str()          ,&TagVarCSV_trackSip3dSig_1          ,(name+"TagVarCSV_trackSip3dSig_1/F").c_str()         );
       tree->Branch((name+"TagVarCSV_trackSip3dSig_2").c_str()          ,&TagVarCSV_trackSip3dSig_2          ,(name+"TagVarCSV_trackSip3dSig_2/F").c_str()         );
       tree->Branch((name+"TagVarCSV_trackSip3dSig_3").c_str()          ,&TagVarCSV_trackSip3dSig_3          ,(name+"TagVarCSV_trackSip3dSig_3/F").c_str()         );
+      tree->Branch((name+"TagVarCSV_trackPtRel_0").c_str()             ,&TagVarCSV_trackPtRel_0             ,(name+"TagVarCSV_trackPtRel_0/F").c_str()            );
+      tree->Branch((name+"TagVarCSV_trackPtRel_1").c_str()             ,&TagVarCSV_trackPtRel_1             ,(name+"TagVarCSV_trackPtRel_1/F").c_str()            );
+      tree->Branch((name+"TagVarCSV_trackPtRel_2").c_str()             ,&TagVarCSV_trackPtRel_2             ,(name+"TagVarCSV_trackPtRel_2/F").c_str()            );
+      tree->Branch((name+"TagVarCSV_trackPtRel_3").c_str()             ,&TagVarCSV_trackPtRel_3             ,(name+"TagVarCSV_trackPtRel_3/F").c_str()            );
       tree->Branch((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0            ,(name+"TagVarCSV_trackEtaRel_0/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1            ,(name+"TagVarCSV_trackEtaRel_1/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2            ,(name+"TagVarCSV_trackEtaRel_2/F").c_str()           );
@@ -145,6 +153,10 @@ class TagVarBranches {
       tree->SetBranchAddress((name+"TagVarCSV_trackSip3dSig_1").c_str()          ,&TagVarCSV_trackSip3dSig_1         );
       tree->SetBranchAddress((name+"TagVarCSV_trackSip3dSig_2").c_str()          ,&TagVarCSV_trackSip3dSig_2         );
       tree->SetBranchAddress((name+"TagVarCSV_trackSip3dSig_3").c_str()          ,&TagVarCSV_trackSip3dSig_3         );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_0").c_str()             ,&TagVarCSV_trackPtRel_0            );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_1").c_str()             ,&TagVarCSV_trackPtRel_1            );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_2").c_str()             ,&TagVarCSV_trackPtRel_2            );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_3").c_str()             ,&TagVarCSV_trackPtRel_3            );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2           );

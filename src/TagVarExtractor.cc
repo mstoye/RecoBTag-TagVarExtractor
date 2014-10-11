@@ -219,29 +219,34 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.TagVarCSV_flightDistance3dVal     = (JetInfo.TagVarCSV_flightDistance3dVal[iJet] < -1000. ? -1. : JetInfo.TagVarCSV_flightDistance3dVal[iJet]);
       TagVarInfo.TagVarCSV_flightDistance3dSig     = (JetInfo.TagVarCSV_flightDistance3dSig[iJet] < -1000. ? -1. : JetInfo.TagVarCSV_flightDistance3dSig[iJet]);
 
-      //loop over tracks to get IPs
+      // loop over tracks to get IPs
       std::vector<float> IP2Ds;
       std::vector<float> IP3Ds;
+      std::vector<float> PtRel;
       for (int iTrk = JetInfo.Jet_nFirstTrkTagVarCSV[iJet]; iTrk < JetInfo.Jet_nLastTrkTagVarCSV[iJet]; ++iTrk){
         IP2Ds.push_back( JetInfo.TagVarCSV_trackSip2dSig[iTrk] );
         IP3Ds.push_back( JetInfo.TagVarCSV_trackSip3dSig[iTrk] );
+        PtRel.push_back( JetInfo.TagVarCSV_trackPtRel[iTrk] );
       }
 
-      //loop over tracks to get trackEtaRel
-      std::vector<float> etaRels; //stores |trackEtaRel|!
+      // loop over tracks to get trackEtaRel
+      std::vector<float> etaRels; // stores |trackEtaRel|!
       for (int iTrk = JetInfo.Jet_nFirstTrkEtaRelTagVarCSV[iJet]; iTrk < JetInfo.Jet_nLastTrkEtaRelTagVarCSV[iJet]; ++iTrk)
         etaRels.push_back( fabs(JetInfo.TagVarCSV_trackEtaRel[iTrk]) );
 
-      //sort the IP vectors in descending order and fill the branches based on the number of tracks
+      // sort the IP vectors in descending order and fill the branches based on the number of tracks
       std::sort( IP2Ds.begin(),IP2Ds.end(),std::greater<float>() );
       std::sort( IP3Ds.begin(),IP3Ds.end(),std::greater<float>() );
-      //sort etaRels in ascending order
+      std::sort( PtRel.begin(),PtRel.end(),std::greater<float>() );
+      // sort etaRels in ascending order
       std::sort( etaRels.begin(),etaRels.end() ); //std::sort sorts in ascending order by default
+
       int numTracks = JetInfo.TagVarCSV_jetNTracks[iJet];
       int numEtaRelTracks = JetInfo.TagVarCSV_jetNTracksEtaRel[iJet];
       float dummyTrack = -99.;
+      float dummyPtRel = -1.;
       float dummyEtaRel = -1.;
-      //switch on the number of tracks in order to fill branches with a dummy if needed
+      // switch on the number of tracks in order to fill branches with a dummy if needed
       switch(numTracks){
         // if there are no selected tracks
         case 0:
@@ -255,6 +260,11 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
           TagVarInfo.TagVarCSV_trackSip3dSig_1 = dummyTrack;
           TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
           TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackPtRel_0 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_1 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_2 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_3 = dummyPtRel;
           break;
 
         case 1:
@@ -268,6 +278,11 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
           TagVarInfo.TagVarCSV_trackSip3dSig_1 = dummyTrack;
           TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
           TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackPtRel_0 = PtRel.at(0);
+          TagVarInfo.TagVarCSV_trackPtRel_1 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_2 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_3 = dummyPtRel;
           break;
 
         case 2:
@@ -281,6 +296,11 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
           TagVarInfo.TagVarCSV_trackSip3dSig_1 = IP3Ds.at(1);
           TagVarInfo.TagVarCSV_trackSip3dSig_2 = dummyTrack;
           TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackPtRel_0 = PtRel.at(0);
+          TagVarInfo.TagVarCSV_trackPtRel_1 = PtRel.at(1);
+          TagVarInfo.TagVarCSV_trackPtRel_2 = dummyPtRel;
+          TagVarInfo.TagVarCSV_trackPtRel_3 = dummyPtRel;
           break;
 
         case 3:
@@ -294,6 +314,11 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
           TagVarInfo.TagVarCSV_trackSip3dSig_1 = IP3Ds.at(1);
           TagVarInfo.TagVarCSV_trackSip3dSig_2 = IP3Ds.at(2);
           TagVarInfo.TagVarCSV_trackSip3dSig_3 = dummyTrack;
+
+          TagVarInfo.TagVarCSV_trackPtRel_0 = PtRel.at(0);
+          TagVarInfo.TagVarCSV_trackPtRel_1 = PtRel.at(1);
+          TagVarInfo.TagVarCSV_trackPtRel_2 = PtRel.at(2);
+          TagVarInfo.TagVarCSV_trackPtRel_3 = dummyPtRel;
           break;
 
         default:
@@ -308,9 +333,14 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
           TagVarInfo.TagVarCSV_trackSip3dSig_2 = IP3Ds.at(2);
           TagVarInfo.TagVarCSV_trackSip3dSig_3 = IP3Ds.at(3);
 
-      } //end switch on number of tracks for IP
+          TagVarInfo.TagVarCSV_trackPtRel_0 = PtRel.at(0);
+          TagVarInfo.TagVarCSV_trackPtRel_1 = PtRel.at(1);
+          TagVarInfo.TagVarCSV_trackPtRel_2 = PtRel.at(2);
+          TagVarInfo.TagVarCSV_trackPtRel_3 = PtRel.at(3);
 
-      //switch on the number of etarel tracks in order to fill branches with a dummy if needed
+      } // end switch on number of tracks for IP
+
+      // switch on the number of etarel tracks in order to fill branches with a dummy if needed
       switch(numEtaRelTracks){
         // if there are no etarel tracks
         case 0:
