@@ -3,7 +3,7 @@
 // Package:    TagVarExtractor
 // Class:      TagVarExtractor
 // 
-/**\class TagVarExtractor TagVarExtractor.cc MyAnalysis/TagVarExtractor/src/TagVarExtractor.cc
+/**\class TagVarExtractor TagVarExtractor.cc RecoBTag/TagVarExtractor/src/TagVarExtractor.cc
 
  Description: [one line class summary]
 
@@ -36,7 +36,7 @@
 #include "RecoBTag/PerformanceMeasurements/interface/JetInfoBranches.h"
 #include "RecoBTag/PerformanceMeasurements/interface/EventInfoBranches.h"
 
-#include "MyAnalysis/TagVarExtractor/interface/TagVarBranches.h"
+#include "RecoBTag/TagVarExtractor/interface/TagVarBranches.h"
 
 #include <TString.h>
 #include <TChain.h>
