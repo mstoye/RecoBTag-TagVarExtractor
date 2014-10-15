@@ -34,22 +34,32 @@ options.register('dumpPythonCfg', '',
     VarParsing.varType.string,
     "Name of the rewritten cfg file"
 )
-options.register('inputTDir', 'btagana',
+options.register('inputTDir', 'btaganaSubJets',
     VarParsing.multiplicity.singleton,
     VarParsing.varType.string,
-    "TDirectory containing the input TTree"
+    "TDirectory containing the input jet TTree"
 )
-options.register('varPrefix', '',
+options.register('inputEventTDir', 'btagana',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "TDirectory containing the input event TTree"
+)
+options.register('varPrefix', 'FatJetInfo',
     VarParsing.multiplicity.singleton,
     VarParsing.varType.string,
     "Variable name prefix such as 'JetInfo', 'FatJetInfo' or an empty string"
 )
-options.register('jetPtMin', 100.,
+options.register('varPrefixSubjets', 'JetInfo',
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.string,
+    "Variable name prefix for subjets"
+)
+options.register('jetPtMin', 300.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Minimum jet Pt"
 )
-options.register('jetPtMax', 170.,
+options.register('jetPtMax', 500.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Maximum jet Pt"
@@ -59,10 +69,15 @@ options.register('jetAbsEtaMin', 0.,
     VarParsing.varType.float,
     "Minimum jet |eta|"
 )
-options.register('jetAbsEtaMax', 1.2,
+options.register('jetAbsEtaMax', 1.5,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Maximum jet |eta|"
+)
+options.register('doBosonMatching', False,
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.bool,
+    "Do boson matching"
 )
 
 ## 'maxEvents' is already registered by the Framework, changing default value
@@ -101,15 +116,20 @@ process.TFileService = cms.Service("TFileService",
 )
 
 process.tagVars = cms.EDAnalyzer('TagVarExtractor',
-    MaxEvents    = cms.int32(options.maxEvents),
-    ReportEvery  = cms.int32(options.reportEvery),
-    InputTTree   = cms.string(options.inputTDir+'/ttree'),
-    VarPrefix    = cms.string(options.varPrefix),
-    InputFiles   = cms.vstring(inputFiles),
-    JetPtMin     = cms.double(options.jetPtMin),
-    JetPtMax     = cms.double(options.jetPtMax),
-    JetAbsEtaMin = cms.double(options.jetAbsEtaMin),
-    JetAbsEtaMax = cms.double(options.jetAbsEtaMax)
+    MaxEvents           = cms.int32(options.maxEvents),
+    ReportEvery         = cms.int32(options.reportEvery),
+    InputTTree          = cms.string(options.inputTDir+'/ttree'),
+    InputEventTTree     = cms.string(options.inputEventTDir+'/ttree'),
+    VarPrefix           = cms.string(options.varPrefix),
+    VarPrefixSubjets    = cms.string(options.varPrefixSubjets),
+    InputFiles          = cms.vstring(inputFiles),
+    JetPtMin            = cms.double(options.jetPtMin),
+    JetPtMax            = cms.double(options.jetPtMax),
+    JetAbsEtaMin        = cms.double(options.jetAbsEtaMin),
+    JetAbsEtaMax        = cms.double(options.jetAbsEtaMax),
+    DoBosonMatching     = cms.bool(options.doBosonMatching),
+    BosonMatchingRadius = cms.double(0.5),
+    BosonPdgId          = cms.int32(25)
 )
 
 process.p = cms.Path(process.tagVars)
