@@ -74,7 +74,7 @@ options.register('jetAbsEtaMax', 1.5,
     VarParsing.varType.float,
     "Maximum jet |eta|"
 )
-options.register('jetMassMin', 100.,
+options.register('jetMassMin', 80.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Minimum jet mass"

@@ -272,7 +272,7 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.Jet_eta         = JetInfo.Jet_eta[iJet];
       TagVarInfo.Jet_phi         = JetInfo.Jet_phi[iJet];
       TagVarInfo.Jet_mass        = JetInfo.Jet_mass[iJet];
-      TagVarInfo.Jet_massGroomed = JetInfo.Jet_mass[iJet];
+      TagVarInfo.Jet_massGroomed = JetInfo.Jet_massGroomed[iJet];
       TagVarInfo.Jet_flavour     = JetInfo.Jet_flavour[iJet];
       TagVarInfo.Jet_nbHadrons   = JetInfo.Jet_nbHadrons[iJet];
       TagVarInfo.Jet_JP          = JetInfo.Jet_Proba[iJet];
