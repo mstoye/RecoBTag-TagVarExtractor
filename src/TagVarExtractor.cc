@@ -106,6 +106,8 @@ class TagVarExtractor : public edm::EDAnalyzer {
       const double                    jetPtMax_;
       const double                    jetAbsEtaMin_;
       const double                    jetAbsEtaMax_;
+      const double                    jetMassMin_;
+      const double                    jetMassMax_;
       const bool                      doBosonMatching_;
       const double                    bosonMatchingRadius_;
       const int                       bosonPdgId_;
@@ -136,6 +138,8 @@ TagVarExtractor::TagVarExtractor(const edm::ParameterSet& iConfig) :
   jetPtMax_(iConfig.getParameter<double>("JetPtMax")),
   jetAbsEtaMin_(iConfig.getParameter<double>("JetAbsEtaMin")),
   jetAbsEtaMax_(iConfig.getParameter<double>("JetAbsEtaMax")),
+  jetMassMin_(iConfig.getParameter<double>("JetMassMin")),
+  jetMassMax_(iConfig.getParameter<double>("JetMassMax")),
   doBosonMatching_(iConfig.getParameter<bool>("DoBosonMatching")),
   bosonMatchingRadius_(iConfig.getParameter<double>("BosonMatchingRadius")),
   bosonPdgId_(iConfig.getParameter<int>("BosonPdgId"))
@@ -236,6 +240,8 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
            JetInfo.Jet_pt[iJet] > jetPtMax_ ) continue;                  // apply jet pT cut
       if ( fabs(JetInfo.Jet_eta[iJet]) < fabs(jetAbsEtaMin_) ||
            fabs(JetInfo.Jet_eta[iJet]) > fabs(jetAbsEtaMax_) ) continue; // apply jet eta cut
+      if ( JetInfo.Jet_massGroomed[iJet] < jetMassMin_ ||
+           JetInfo.Jet_massGroomed[iJet] > jetMassMax_ ) continue;       // apply jet mass cut
       if ( JetInfo.Jet_nSubJets[iJet] != 2 ) continue;                   // require exactly 2 subjets
 
       bool isBosonMatched = false;

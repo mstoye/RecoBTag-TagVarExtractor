@@ -74,6 +74,16 @@ options.register('jetAbsEtaMax', 1.5,
     VarParsing.varType.float,
     "Maximum jet |eta|"
 )
+options.register('jetMassMin', 100.,
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.float,
+    "Minimum jet mass"
+)
+options.register('jetMassMax', 150.,
+    VarParsing.multiplicity.singleton,
+    VarParsing.varType.float,
+    "Maximum jet mass"
+)
 options.register('doBosonMatching', False,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.bool,
@@ -127,6 +137,8 @@ process.tagVars = cms.EDAnalyzer('TagVarExtractor',
     JetPtMax            = cms.double(options.jetPtMax),
     JetAbsEtaMin        = cms.double(options.jetAbsEtaMin),
     JetAbsEtaMax        = cms.double(options.jetAbsEtaMax),
+    JetMassMin          = cms.double(options.jetMassMin),
+    JetMassMax          = cms.double(options.jetMassMax),
     DoBosonMatching     = cms.bool(options.doBosonMatching),
     BosonMatchingRadius = cms.double(0.5),
     BosonPdgId          = cms.int32(25)
