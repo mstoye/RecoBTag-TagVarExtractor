@@ -69,7 +69,6 @@ Queue DUMMY_NJOBS
 """
 
 jdl_template_fnal = """universe = vanilla
-Requirements = Memory >= 199 && OpSys == "LINUX" && (Arch != "DUMMY" )
 Should_Transfer_Files = YES
 WhenToTransferOutput = ON_EXIT
 Notification = never
@@ -129,8 +128,8 @@ START_TIME=`/bin/date`
 echo "Started at $START_TIME"
 echo ""
 
-export SCRAM_ARCH=slc5_amd64_gcc462
-source /uscmst1/prod/sw/cms/shrc prod
+export SCRAM_ARCH=slc6_amd64_gcc472
+source /cvmfs/cms.cern.ch/cmsset_default.sh
 cd $OUTPUTDIR
 eval `scramv1 runtime -sh`
 
