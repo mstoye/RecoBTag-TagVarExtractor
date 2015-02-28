@@ -3,7 +3,7 @@
 // Package:    TagVarExtractor
 // Class:      TagVarExtractor
 // 
-/**\class TagVarExtractor TagVarExtractor.cc RecoBTag/TagVarExtractor/src/TagVarExtractor.cc
+/**\class TagVarExtractor TagVarExtractor.cc RecoBTag/TagVarExtractor/plugins/TagVarExtractor.cc
 
  Description: [one line class summary]
 
@@ -33,8 +33,8 @@
 
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 
-#include "RecoBTag/PerformanceMeasurements/interface/JetInfoBranches.h"
-#include "RecoBTag/PerformanceMeasurements/interface/EventInfoBranches.h"
+#include "RecoBTag/BTagAnalyzerLite/interface/JetInfoBranches.h"
+#include "RecoBTag/BTagAnalyzerLite/interface/EventInfoBranches.h"
 
 #include "RecoBTag/TagVarExtractor/interface/TagVarBranches.h"
 
