@@ -10,7 +10,7 @@ scram b -j8
 
 cd RecoBTag/TagVarExtractor/test/
 
-cmsRun runBTagAnalyzerLite_cfg.py maxEvents=20000 reportEvery=1000 wantSummary=True
+cmsRun tagvarextractor_cfg.py maxEvents=20000 reportEvery=1000 wantSummary=True
 
 This will produce a ROOT file called JetTaggingVariables.root that can be used for TMVA training.
 
