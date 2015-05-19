@@ -87,13 +87,13 @@ process.source = cms.Source("EmptySource")
 process.options = cms.untracked.PSet( wantSummary = cms.untracked.bool(options.wantSummary) )
 
 ## Input files
-inputFiles = []
+inputFiles = ['JetTree_mc_subjets.root']
 ## If using external input files
 if options.useExternalInput:
     inputFiles = open(options.externalInput,"r").read().splitlines()
-else:
-    import QCDFiles_cff
-    inputFiles = QCDFiles_cff.inputFiles
+#else:
+    #import InputFiles_cff
+    #inputFiles = InputFiles_cff.inputFiles
 
 ## Output file
 process.TFileService = cms.Service("TFileService",

@@ -33,8 +33,8 @@
 
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 
-#include "RecoBTag/BTagAnalyzerLite/interface/JetInfoBranches.h"
-#include "RecoBTag/BTagAnalyzerLite/interface/EventInfoBranches.h"
+#include "RecoBTag/PerformanceMeasurements/interface/JetInfoBranches.h"
+#include "RecoBTag/PerformanceMeasurements/interface/EventInfoBranches.h"
 
 #include "RecoBTag/TagVarExtractor/interface/TagVarBranches.h"
 
