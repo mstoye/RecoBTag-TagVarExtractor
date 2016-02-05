@@ -52,10 +52,28 @@ class TagVarBranches {
     float TagVarCSV_trackPtRel_1;                         // second highest track transverse momentum, relative to the jet axis
     float TagVarCSV_trackPtRel_2;                         // third highest track transverse momentum, relative to the jet axis
     float TagVarCSV_trackPtRel_3;                         // fourth highest track transverse momentum, relative to the jet axis
+    float TagVarCSV_trackDeltaR_0;
+    float TagVarCSV_trackDeltaR_1;
+    float TagVarCSV_trackDeltaR_2;
+    float TagVarCSV_trackDeltaR_3;
+    float TagVarCSV_trackPtRatio_0;
+    float TagVarCSV_trackPtRatio_1;
+    float TagVarCSV_trackPtRatio_2;
+    float TagVarCSV_trackPtRatio_3;
+    float TagVarCSV_trackJetDist_0;
+    float TagVarCSV_trackJetDist_1;
+    float TagVarCSV_trackJetDist_2;
+    float TagVarCSV_trackJetDist_3;
+    float TagVarCSV_trackDecayLenVal_0;
+    float TagVarCSV_trackDecayLenVal_1;
+    float TagVarCSV_trackDecayLenVal_2;
+    float TagVarCSV_trackDecayLenVal_3;
+
     // per jet per etaRel track
     float TagVarCSV_trackEtaRel_0;                        // lowest track eta relative to jet axis
     float TagVarCSV_trackEtaRel_1;                        // second lowest track eta relative to jet axis
     float TagVarCSV_trackEtaRel_2;                        // third lowest track eta relative to jet axis
+    float TagVarCSV_trackEtaRel_3;                        // fourth lowest track eta relative to jet axis
 
     void RegisterTree(TTree *tree, std::string name="")
     {
@@ -104,9 +122,26 @@ class TagVarBranches {
       tree->Branch((name+"TagVarCSV_trackPtRel_1").c_str()             ,&TagVarCSV_trackPtRel_1             ,(name+"TagVarCSV_trackPtRel_1/F").c_str()            );
       tree->Branch((name+"TagVarCSV_trackPtRel_2").c_str()             ,&TagVarCSV_trackPtRel_2             ,(name+"TagVarCSV_trackPtRel_2/F").c_str()            );
       tree->Branch((name+"TagVarCSV_trackPtRel_3").c_str()             ,&TagVarCSV_trackPtRel_3             ,(name+"TagVarCSV_trackPtRel_3/F").c_str()            );
+      tree->Branch((name+"TagVarCSV_trackDeltaR_0").c_str()		,&TagVarCSV_trackDeltaR_0	     ,(name+"TagVarCSV_trackDeltaR_0/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDeltaR_1").c_str()		,&TagVarCSV_trackDeltaR_1	     ,(name+"TagVarCSV_trackDeltaR_1/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDeltaR_2").c_str()		,&TagVarCSV_trackDeltaR_2	     ,(name+"TagVarCSV_trackDeltaR_2/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDeltaR_3").c_str()		 ,&TagVarCSV_trackDeltaR_3	     ,(name+"TagVarCSV_trackDeltaR_3/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackPtRatio_0").c_str()		 ,&TagVarCSV_trackPtRatio_0	     ,(name+"TagVarCSV_trackPtRatio_0/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackPtRatio_1").c_str()		 ,&TagVarCSV_trackPtRatio_1	     ,(name+"TagVarCSV_trackPtRatio_1/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackPtRatio_2").c_str()		 ,&TagVarCSV_trackPtRatio_2	     ,(name+"TagVarCSV_trackPtRatio_2/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackPtRatio_3").c_str()		 ,&TagVarCSV_trackPtRatio_3	     ,(name+"TagVarCSV_trackPtRatio_3/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackJetDist_0").c_str()		 ,&TagVarCSV_trackJetDist_0	     ,(name+"TagVarCSV_trackJetDist_0/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackJetDist_1").c_str()		 ,&TagVarCSV_trackJetDist_1	     ,(name+"TagVarCSV_trackJetDist_1/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackJetDist_2").c_str()		 ,&TagVarCSV_trackJetDist_2	     ,(name+"TagVarCSV_trackJetDist_2/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackJetDist_3").c_str()		 ,&TagVarCSV_trackJetDist_3	     ,(name+"TagVarCSV_trackJetDist_3/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDecayLenVal_0").c_str()	 ,&TagVarCSV_trackDecayLenVal_0	     ,(name+"TagVarCSV_trackDecayLenVal_0/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDecayLenVal_1").c_str()	 ,&TagVarCSV_trackDecayLenVal_1	     ,(name+"TagVarCSV_trackDecayLenVal_1/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDecayLenVal_2").c_str()	 ,&TagVarCSV_trackDecayLenVal_2	     ,(name+"TagVarCSV_trackDecayLenVal_2/F").c_str()        );
+      tree->Branch((name+"TagVarCSV_trackDecayLenVal_3").c_str()	 ,&TagVarCSV_trackDecayLenVal_3	     ,(name+"TagVarCSV_trackDecayLenVal_3/F").c_str()        );
       tree->Branch((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0            ,(name+"TagVarCSV_trackEtaRel_0/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1            ,(name+"TagVarCSV_trackEtaRel_1/F").c_str()           );
       tree->Branch((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2            ,(name+"TagVarCSV_trackEtaRel_2/F").c_str()           );
+      tree->Branch((name+"TagVarCSV_trackEtaRel_3").c_str()            ,&TagVarCSV_trackEtaRel_3            ,(name+"TagVarCSV_trackEtaRel_3/F").c_str()           );
 
     }
 
@@ -157,9 +192,26 @@ class TagVarBranches {
       tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_1").c_str()             ,&TagVarCSV_trackPtRel_1            );
       tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_2").c_str()             ,&TagVarCSV_trackPtRel_2            );
       tree->SetBranchAddress((name+"TagVarCSV_trackPtRel_3").c_str()             ,&TagVarCSV_trackPtRel_3            );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDeltaR_0").c_str()		 ,&TagVarCSV_trackDeltaR_0	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDeltaR_1").c_str()		 ,&TagVarCSV_trackDeltaR_1	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDeltaR_2").c_str()		 ,&TagVarCSV_trackDeltaR_2	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDeltaR_3").c_str()		 ,&TagVarCSV_trackDeltaR_3	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRatio_0").c_str()		 ,&TagVarCSV_trackPtRatio_0	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRatio_1").c_str()		 ,&TagVarCSV_trackPtRatio_1	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRatio_2").c_str()		 ,&TagVarCSV_trackPtRatio_2	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackPtRatio_3").c_str()		 ,&TagVarCSV_trackPtRatio_3	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackJetDist_0").c_str()		 ,&TagVarCSV_trackJetDist_0	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackJetDist_1").c_str()		 ,&TagVarCSV_trackJetDist_1	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackJetDist_2").c_str()		 ,&TagVarCSV_trackJetDist_2	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackJetDist_3").c_str()		 ,&TagVarCSV_trackJetDist_3	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDecayLenVal_0").c_str()	 ,&TagVarCSV_trackDecayLenVal_0	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDecayLenVal_1").c_str()	 ,&TagVarCSV_trackDecayLenVal_1	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDecayLenVal_2").c_str()	 ,&TagVarCSV_trackDecayLenVal_2	     );
+      tree->SetBranchAddress((name+"TagVarCSV_trackDecayLenVal_3").c_str()	 ,&TagVarCSV_trackDecayLenVal_3	     );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_0").c_str()            ,&TagVarCSV_trackEtaRel_0           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_1").c_str()            ,&TagVarCSV_trackEtaRel_1           );
       tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_2").c_str()            ,&TagVarCSV_trackEtaRel_2           );
+      tree->SetBranchAddress((name+"TagVarCSV_trackEtaRel_3").c_str()            ,&TagVarCSV_trackEtaRel_3           );
 
     }
 };
