@@ -9,6 +9,7 @@ class TagVarBranches {
   public:
 
     float Jet_pt;
+    float Jet_genpt;
     float Jet_eta;
     float Jet_phi;
     float Jet_mass;
@@ -80,6 +81,7 @@ class TagVarBranches {
       if(name!="") name += ".";
 
       tree->Branch((name+"Jet_pt").c_str()          ,&Jet_pt          ,(name+"Jet_pt/F").c_str()        );
+      tree->Branch((name+"Jet_genpt").c_str()          ,&Jet_genpt          ,(name+"Jet_genpt/F").c_str()        );
       tree->Branch((name+"Jet_eta").c_str()         ,&Jet_eta         ,(name+"Jet_eta/F").c_str()       );
       tree->Branch((name+"Jet_phi").c_str()         ,&Jet_phi         ,(name+"Jet_phi/F").c_str()       );
       tree->Branch((name+"Jet_mass").c_str()        ,&Jet_mass        ,(name+"Jet_mass/F").c_str()      );
@@ -150,6 +152,7 @@ class TagVarBranches {
       if (name!="") name += ".";
 
       tree->SetBranchAddress((name+"Jet_pt").c_str()          ,&Jet_pt        );
+      tree->SetBranchAddress((name+"Jet_genpt").c_str()          ,&Jet_genpt        );
       tree->SetBranchAddress((name+"Jet_eta").c_str()         ,&Jet_eta       );
       tree->SetBranchAddress((name+"Jet_phi").c_str()         ,&Jet_phi       );
       tree->SetBranchAddress((name+"Jet_mass").c_str()        ,&Jet_mass      );

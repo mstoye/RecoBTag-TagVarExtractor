@@ -172,6 +172,8 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
   if(maxEvents_>=0) nEntries = ( nEntries>=maxEvents_ ? maxEvents_ : nEntries );
 
   //---------------------------- Start event loop ---------------------------------------//
+  std::cout << "Threshold JetPt (Min, Max) = (" << jetPtMin_ << ", " << jetPtMax_ << ")" << std::endl;
+  std::cout << "Threshold JetAbsEta (Min, Max) = (" << jetAbsEtaMin_ << ", " << jetAbsEtaMax_ << ")" << std::endl;
   for(Long64_t iEntry = 0; iEntry < nEntries; ++iEntry)
   {
     JetTree->GetEntry(iEntry);
@@ -179,17 +181,24 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
 
     if(JetInfo.nJet <= 0) continue; // require at least 1 fat jet in the event
 
+    //std::cout << "Event with njet=" << JetInfo.nJet << std::endl;
     //---------------------------- Start fat jet loop ---------------------------------------//
     for(int iJet = 0; iJet < JetInfo.nJet; ++iJet)
     {
+    
+      //std::cout << "  iJet=" << iJet << " Pt=" << JetInfo.Jet_pt[iJet] << " |Eta|=" << fabs(JetInfo.Jet_eta[iJet]) << std::endl;;
       if ( JetInfo.Jet_pt[iJet] < jetPtMin_ ||
            JetInfo.Jet_pt[iJet] > jetPtMax_ ) continue;                  // apply jet pT cut
+      
+      //std::cout << "  Passes Jet_pt cuts" << iJet << std::endl;;
       if ( fabs(JetInfo.Jet_eta[iJet]) < fabs(jetAbsEtaMin_) ||
            fabs(JetInfo.Jet_eta[iJet]) > fabs(jetAbsEtaMax_) ) continue; // apply jet eta cut
+      //std::cout << "  Passes Jet_eta cuts" << iJet << std::endl;;
 
       memset(&TagVarInfo,0x00,sizeof(TagVarInfo));
 
       TagVarInfo.Jet_pt        = JetInfo.Jet_pt[iJet];
+      TagVarInfo.Jet_genpt        = JetInfo.Jet_genpt[iJet];
       TagVarInfo.Jet_eta       = JetInfo.Jet_eta[iJet];
       TagVarInfo.Jet_phi       = JetInfo.Jet_phi[iJet];
       TagVarInfo.Jet_mass      = JetInfo.Jet_mass[iJet];
@@ -497,6 +506,7 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
 
       } //end switch on number of etarel tracks
 
+      //std::cout << std::endl << "I arrive to TagVarTree->Fill()" << std::endl;
       TagVarTree->Fill();
     }
     //----------------------------- End fat jet loop ----------------------------------------//
