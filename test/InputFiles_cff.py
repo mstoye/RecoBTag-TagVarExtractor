@@ -1,25 +1,72 @@
 inputFiles = [
-    'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_980_1_TjT.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_981_1_Nw1.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_982_1_LdE.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_983_1_y0m.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_984_1_DjE.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_985_1_rfe.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_986_1_PJY.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_987_1_Ni6.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_988_2_GfQ.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_989_2_9xC.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_98_1_FVo.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_990_2_GtW.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_991_2_EOp.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_992_2_haU.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_993_2_xl5.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_994_2_lHs.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_995_2_JGZ.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_996_2_coG.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_997_2_6fN.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_998_1_RqM.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_999_1_12C.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_99_1_5MG.root'
-  , 'root://cmsxrootd-site.fnal.gov//store/user/rsyarif/QCD_Pt-600to800_TuneZ2star_8TeV_pythia6/Summer12_DR53X-PU_S10_START53_V7A-v2_BTagAnalyzerLite_5_3_X_v1.01/JetTree_mc_subjets_9_1_uEC.root'
+   'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_1.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_10.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_11.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_12.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_13.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_14.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_15.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_16.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_17.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_18.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_19.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_2.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_20.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_21.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_22.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_23.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_24.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_25.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_26.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_27.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_28.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_29.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_3.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_30.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_31.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_32.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_33.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_34.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_35.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_36.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_37.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_38.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_39.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_4.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_40.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_41.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_42.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_43.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_44.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_45.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_46.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_47.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_48.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_49.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_5.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_50.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_51.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_52.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_53.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_54.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_55.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_56.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_57.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_58.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_59.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_6.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_60.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_61.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_62.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_63.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_64.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_65.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_66.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_67.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_7.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_8.root',
+'root://eoscms.cern.ch//eos/cms/store/cmst3/user/mstoye/CSVv2Tuples/QCDPt1000to1400/JetTree_mc_9.root',
+
+
+
 ]
