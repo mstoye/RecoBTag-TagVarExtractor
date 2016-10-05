@@ -201,10 +201,11 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       // deleted jets that are fake, e.g. muon ect.
       if ( fabs( JetInfo.Jet_flavour[iJet] )< 0.5) continue;
 
-      if(JetFlavor_Flag_==1 && fabs( JetInfo.Jet_flavour[iJet] )!=5) continue;
-      if(JetFlavor_Flag_==2 && fabs( JetInfo.Jet_flavour[iJet] )!=4) continue;
+      if(JetFlavor_Flag_==1 && (fabs( JetInfo.Jet_flavour[iJet] )!=5 || JetInfo.Jet_nbHadrons[iJet]>1)) continue;
+      if(JetFlavor_Flag_==2 && (fabs( JetInfo.Jet_flavour[iJet] )!=4 || JetInfo.Jet_ncHadrons[iJet]>1)) continue;
       if(JetFlavor_Flag_==3 && !( fabs( JetInfo.Jet_flavour[iJet] )==1 ||  fabs( JetInfo.Jet_flavour[iJet] )==2 ||  fabs( JetInfo.Jet_flavour[iJet] )==3  ||  fabs( JetInfo.Jet_flavour[iJet] )==21)  ) continue;
-
+      if(JetFlavor_Flag_==4 &&( fabs( JetInfo.Jet_flavour[iJet] )!=5 || JetInfo.Jet_nbHadrons[iJet]<2)) continue;
+      if(JetFlavor_Flag_==5 && (fabs( JetInfo.Jet_flavour[iJet] )!=4 || JetInfo.Jet_ncHadrons[iJet]<2)) continue;
 
       //      if ( fabs( JetInfo.Jet_flavour[iJet] )==4) continue;
 
