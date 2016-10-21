@@ -239,6 +239,8 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       //  TagVarInfo.TagVarCSV_trackSumJetDeltaR       = (JetInfo.TagVarCSV_trackSumJetDeltaR[iJet] < -1000. ? -1. : JetInfo.TagVarCSV_trackSumJetDeltaR[iJet]);
       TagVarInfo.TagVarCSV_trackSumJetEtRatio      = (JetInfo.TagVarCSV_trackSumJetEtRatio[iJet] < -1000. ? -99. : JetInfo.TagVarCSV_trackSumJetEtRatio[iJet]);
       TagVarInfo.TagVarCSV_trackSumJetDeltaR       = (JetInfo.TagVarCSV_trackSumJetDeltaR[iJet] < -1000. ? -99. : JetInfo.TagVarCSV_trackSumJetDeltaR[iJet]);
+ 
+      //if( JetInfo.TagVarCSV_jetNTracks[iJet]==0)
       TagVarInfo.TagVarCSV_trackSip2dValAboveCharm = (JetInfo.TagVarCSV_trackSip2dValAboveCharm[iJet] < -1000. ? -99. : JetInfo.TagVarCSV_trackSip2dValAboveCharm[iJet]);
       TagVarInfo.TagVarCSV_trackSip2dSigAboveCharm = (JetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet] < -1000. ? -99. : JetInfo.TagVarCSV_trackSip2dSigAboveCharm[iJet]);
       TagVarInfo.TagVarCSV_trackSip3dValAboveCharm = (JetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet] < -1000. ? -99. : JetInfo.TagVarCSV_trackSip3dValAboveCharm[iJet]);
@@ -368,7 +370,19 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
        TagVarInfo.TagVarCSV_trackDecayLenVal_6 = dummy;
        TagVarInfo.TagVarCSV_trackDecayLenVal_7 = dummy;
        TagVarInfo.TagVarCSV_trackEtaRel_0 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_1 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_2 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_3 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_4 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_5 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_6 = dummyEtaRel;
+       TagVarInfo.TagVarCSV_trackEtaRel_7 = dummyEtaRel;
   
+
+
+
+
+
 
      if(numTracks>0){
 	 TagVarInfo.TagVarCSV_trackSip2dSig_0 = IP2Ds.at(0);
