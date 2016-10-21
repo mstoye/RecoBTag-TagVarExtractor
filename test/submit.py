@@ -2,7 +2,7 @@
 import os
 import sys
 
-theFiles = ['ttbar','QCD_Pt_30to50','QCD_Pt_50to80','QCD_Pt_80to120','QCD_Pt_120to170','QCD_Pt_170to300']
+theFiles = ['ttbar','QCD_Pt_120to170','QCD_Pt_170to300','QCD_Pt_300to470','QCD_Pt_470to600']
 
 
 initialDir = os.getcwd()
@@ -11,14 +11,14 @@ for i in range(len(theFiles)):
     print os.getcwd()
     f = open('prod_tagvarextractor_cfg.py','r')
     batch = open('prod_submit.sh','r')
-    os.mkdir(theFiles[i])
-    os.chdir(theFiles[i])
+    os.mkdir(theFiles[i]+"_200")
+    os.chdir(theFiles[i]+"_200")
     print os.getcwd()
     b =  open('btagvarextractor_cfg.py','w')
     c =  open('ctagvarextractor_cfg.py','w')
     u =  open('utagvarextractor_cfg.py','w')
-    bb =  open('utagvarextractor_cfg.py','w')
-    cc =  open('utagvarextractor_cfg.py','w')
+    bb =  open('bbtagvarextractor_cfg.py','w')
+    cc =  open('cctagvarextractor_cfg.py','w')
 
    # print os.list()
 # prepare .py files from prod_tagvarextractor_cfg.py
@@ -42,7 +42,7 @@ for i in range(len(theFiles)):
             c.write(line.replace('JetTaggingVariables.','JetTaggingVariablesc.'))
             u.write(line.replace('JetTaggingVariables.','JetTaggingVariablesu.'))
             cc.write(line.replace('JetTaggingVariables.','JetTaggingVariablescc.'))
-            bb.write(line.replace('JetTaggingVariables.','JetTaggingVariablescc.'))
+            bb.write(line.replace('JetTaggingVariables.','JetTaggingVariablesbb.'))
         else:
             b.write(line)
             c.write(line)
@@ -91,9 +91,9 @@ for i in range(len(theFiles)):
         elif 'cmsRun XXX.py' in line:
             bs.write(line.replace('cmsRun XXX.py','cmsRun btagvarextractor_cfg.py maxEvents=-1'))
             cs.write(line.replace('cmsRun XXX.py','cmsRun ctagvarextractor_cfg.py maxEvents=-1'))
-            us.write(line.replace('cmsRun XXX.py','cmsRun utagvarextractor_cfg.py maxEvents=2000000'))
-            bbs.write(line.replace('cmsRun XXX.py','cmsRun btagvarextractor_cfg.py maxEvents=-1'))
-            ccs.write(line.replace('cmsRun XXX.py','cmsRun ctagvarextractor_cfg.py maxEvents=-1'))
+            us.write(line.replace('cmsRun XXX.py','cmsRun utagvarextractor_cfg.py maxEvents=4000000'))
+            bbs.write(line.replace('cmsRun XXX.py','cmsRun bbtagvarextractor_cfg.py maxEvents=-1'))
+            ccs.write(line.replace('cmsRun XXX.py','cmsRun cctagvarextractor_cfg.py maxEvents=-1'))
 
         else:
             bs.write(line)
