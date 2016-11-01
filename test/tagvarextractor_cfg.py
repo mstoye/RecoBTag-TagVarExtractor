@@ -1,17 +1,17 @@
 import FWCore.ParameterSet.Config as cms
 #from InputFiles_cff import inputFiles
-from ttbar_cff import inputFiles
+from QCD_Pt_50to80_test_cff import inputFiles
 
 from FWCore.ParameterSet.VarParsing import VarParsing
 
 options = VarParsing('python')
 
-options.register('outFilename', 'JetTaggingVariables.root',
+options.register('outFilename', 'JetTaggingVariablesQCD50to80.root',
     VarParsing.multiplicity.singleton,
     VarParsing.varType.string,
     "Output file name"
 )
-options.register('reportEvery', 1000,
+options.register('reportEvery', 1000000,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.int,
     "Report every N events (default is N=1000)"
@@ -46,17 +46,17 @@ options.register('varPrefix', '',
     VarParsing.varType.string,
     "Variable name prefix such as 'JetInfo', 'FatJetInfo' or an empty string"
 )
-options.register('jetPtMin', 20.,
+options.register('jetPtMin', 30.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Minimum jet Pt"
 )
-options.register('jetPtMax', 10000.,
+options.register('jetPtMax', 100.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Maximum jet Pt"
 )
-options.register('jetAbsEtaMin', 0.,
+options.register('jetAbsEtaMin', 0,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Minimum jet |eta|"
@@ -68,7 +68,7 @@ options.register('jetAbsEtaMax', 2.4,
 )
 
 ## 'maxEvents' is already registered by the Framework, changing default value
-options.setDefault('maxEvents', 1000000)
+options.setDefault('maxEvents', -1)
 
 options.parseArguments()
 
@@ -78,7 +78,7 @@ process = cms.Process("TagVars")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 process.MessageLogger.cout = cms.untracked.PSet(
-    threshold = cms.untracked.string('INFO')
+    threshold = cms.untracked.string('ERROR')
 )
 
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1) ) # Keep as such
@@ -111,7 +111,8 @@ process.tagVars = cms.EDAnalyzer('TagVarExtractor',
     JetPtMin     = cms.double(options.jetPtMin),
     JetPtMax     = cms.double(options.jetPtMax),
     JetAbsEtaMin = cms.double(options.jetAbsEtaMin),
-    JetAbsEtaMax = cms.double(options.jetAbsEtaMax)
+    JetAbsEtaMax = cms.double(options.jetAbsEtaMax),
+    JetFlavor = cms.int32(0)
 )
 
 process.p = cms.Path(process.tagVars)

@@ -2,7 +2,8 @@
 import os
 import sys
 
-theFiles = ['ttbar','QCD_Pt_120to170','QCD_Pt_170to300','QCD_Pt_300to470','QCD_Pt_470to600']
+#theFiles = ['ttbar','QCD_Pt_120to170','QCD_Pt_170to300','QCD_Pt_300to470','QCD_Pt_470to600']
+theFiles = ['QCD_Pt_50to80']
 
 
 initialDir = os.getcwd()
@@ -11,8 +12,8 @@ for i in range(len(theFiles)):
     print os.getcwd()
     f = open('prod_tagvarextractor_cfg.py','r')
     batch = open('prod_submit.sh','r')
-    os.mkdir(theFiles[i]+"_200")
-    os.chdir(theFiles[i]+"_200")
+    os.mkdir(theFiles[i])
+    os.chdir(theFiles[i])
     print os.getcwd()
     b =  open('btagvarextractor_cfg.py','w')
     c =  open('ctagvarextractor_cfg.py','w')

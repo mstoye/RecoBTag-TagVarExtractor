@@ -51,7 +51,7 @@ options.register('jetPtMin', 30.,
     VarParsing.varType.float,
     "Minimum jet Pt"
 )
-options.register('jetPtMax', 10000.,
+options.register('jetPtMax', 100.,
     VarParsing.multiplicity.singleton,
     VarParsing.varType.float,
     "Maximum jet Pt"
@@ -78,7 +78,7 @@ process = cms.Process("TagVars")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 process.MessageLogger.cout = cms.untracked.PSet(
-    threshold = cms.untracked.string('INFO')
+    threshold = cms.untracked.string('ERROR')
 )
 
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1) ) # Keep as such
