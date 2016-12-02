@@ -180,10 +180,32 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
   for(Long64_t iEntry = 0; iEntry < nEntries; ++iEntry)
   {
     JetTree->GetEntry(iEntry);
+
     if((iEntry%reportEvery_) == 0) edm::LogInfo("EventNumber") << "Processing event " << iEntry << " of " << nEntries;
 
     if(JetInfo.nJet <= 0) continue; // require at least 1 fat jet in the event
 
+    std::vector<float> CleanEta;
+    std::vector<float> CleanPhi;
+    //CleanEta.erase();
+    // CleanPhi.erase();
+    for(int iGen = 0; iGen < EvtInfo.nGenPruned; ++iGen)
+      {
+	//	std::cout << EvtInfo.GenPruned_mother[iGen] <<std::endl;
+	if(EvtInfo.GenPruned_mother[iGen]>=0)
+	  { 
+	    // if(fabs(EvtInfo.GenPruned_pdgID[EvtInfo.GenPruned_mother[iGen]])==23)
+	    // std::cout << " four a son of a W"<<std::endl;
+
+	    //std::cout << EvtInfo.GenPruned_pdgID[EvtInfo.GenPruned_mother[iGen]] <<std::endl;
+	    if( (fabs(EvtInfo.GenPruned_pdgID[iGen])==11||fabs(EvtInfo.GenPruned_pdgID[iGen])==13|| fabs(EvtInfo.GenPruned_pdgID[iGen])==15)   &&fabs(EvtInfo.GenPruned_pdgID[EvtInfo.GenPruned_mother[iGen]])==24)
+	      //  std::cout << " four a son of a W"<<std::endl;
+
+	    CleanEta.push_back(EvtInfo.GenPruned_eta[iGen]);
+	    CleanPhi.push_back(EvtInfo.GenPruned_eta[iGen]);
+	  }
+
+      }
     //std::cout << "Event with njet=" << JetInfo.nJet << std::endl;
     //---------------------------- Start fat jet loop ---------------------------------------//
     for(int iJet = 0; iJet < JetInfo.nJet; ++iJet)
@@ -196,10 +218,17 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       //std::cout << "  Passes Jet_pt cuts" << iJet << std::endl;;
       if ( fabs(JetInfo.Jet_eta[iJet]) < fabs(jetAbsEtaMin_) ||
            fabs(JetInfo.Jet_eta[iJet]) > fabs(jetAbsEtaMax_) ) continue; // apply jet eta cut
-      //std::cout << "  Passes Jet_eta cuts" << iJet << std::endl;;
+      std::cout << "  Passes Jet_eta cuts" << iJet << std::endl;;
 
+      for (unsigned GenL = 0 ; GenL<CleanEta.size();GenL++)	{
+
+	  if (reco::deltaR(CleanEta[GenL],CleanPhi[GenL],JetInfo.Jet_eta[iJet],JetInfo.Jet_phi[iJet])<0.3) {
+	    // std::cout << " four a son of a W "<<   <<std::endl;
+	      continue;
+	    }
+	}
       // deleted jets that are fake, e.g. muon ect.
-      if ( fabs( JetInfo.Jet_flavour[iJet] )< 0.5) continue;
+      if (JetFlavor_Flag_!=-1 && fabs( JetInfo.Jet_flavour[iJet] )< 0.5) continue;
 
       if(JetFlavor_Flag_==1 && (fabs( JetInfo.Jet_flavour[iJet] )!=5 || JetInfo.Jet_nbHadrons[iJet]>1)) continue;
       if(JetFlavor_Flag_==2 && (fabs( JetInfo.Jet_flavour[iJet] )!=4 || JetInfo.Jet_ncHadrons[iJet]>1)) continue;
@@ -221,15 +250,24 @@ TagVarExtractor::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup
       TagVarInfo.Jet_flavour   = JetInfo.Jet_flavour[iJet];
       TagVarInfo.Jet_nbHadrons = JetInfo.Jet_nbHadrons[iJet];
       TagVarInfo.Jet_ncHadrons = JetInfo.Jet_ncHadrons[iJet];
-      TagVarInfo.Jet_JP        = JetInfo.Jet_Proba[iJet];
-      TagVarInfo.Jet_JBP       = JetInfo.Jet_Bprob[iJet];
+      if(JetInfo.Jet_pt[iJet]<200){
+	TagVarInfo.Jet_JP        = JetInfo.Jet_Proba[iJet];
+	TagVarInfo.Jet_JBP       = JetInfo.Jet_Bprob[iJet];
+	TagVarInfo.Jet_SoftEl       = JetInfo.Jet_SoftEl[iJet];
+	TagVarInfo.Jet_SoftMu    = JetInfo.Jet_SoftMu[iJet];
+      }
+      else
+	{
+	TagVarInfo.Jet_JP        = -99.;
+	TagVarInfo.Jet_JBP       = -99.;
+	TagVarInfo.Jet_SoftEl       = -99.;
+	TagVarInfo.Jet_SoftMu    = -99.;
+	} 
       TagVarInfo.Jet_CSV       = JetInfo.Jet_CombSvx[iJet];
       TagVarInfo.Jet_CSVIVF    = JetInfo.Jet_CombIVF[iJet];
       //std::cout << " test " << JetInfo.Jet_cMVAv2[iJet] << " not "<< JetInfo.Jet_CombIVF[iJet]<<std::endl;
       TagVarInfo.Jet_cMVAv2       = JetInfo.Jet_cMVAv2[iJet];
-      TagVarInfo.Jet_SoftEl       = JetInfo.Jet_SoftEl[iJet];
-      TagVarInfo.Jet_SoftMu    = JetInfo.Jet_SoftMu[iJet];
-
+    
 
 
 
